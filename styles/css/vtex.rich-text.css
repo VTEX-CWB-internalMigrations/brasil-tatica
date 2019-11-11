@@ -5,6 +5,10 @@
 
 .link--contact-header,
 .link--content-intitutional{color:#999 !important;}
+.container--contact-header .link, .container--contact-header .link--text-securitySell{
+  color:#999;
+  text-decoration: none;
+}
 
 .container--tip-title .headingLevel3--link,
 .headingLevel3--tip-content{
