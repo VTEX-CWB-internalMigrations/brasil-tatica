@@ -1,0 +1,7 @@
+.headerStickyRow{
+    border-bottom:2px solid #ddd;
+}
+
+.headerRowContainer--content-searchBar{
+    justify-content: center;
+}

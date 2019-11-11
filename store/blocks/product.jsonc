@@ -1,0 +1,156 @@
+{
+  "store.product": {
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#alert-product",
+      "flex-layout.row#product-main",
+      "flex-layout.row#product-description",
+      "shelf.relatedProducts",
+      "product-reviews",
+      "product-questions-and-answers"
+    ]
+  },
+  "flex-layout.row#product-breadcrumb": {
+    "props": {
+      "marginTop": 4
+    },
+    "children": ["breadcrumb"]
+  },
+  "flex-layout.row#alert-product":{
+    "children":[
+      "rich-text#alert-product"
+    ]
+  },
+  "rich-text#alert-product":{
+    "props":{
+      "text":"# LEIA COM ATENÇÃO ANTES DE FAZER PEDIDO DE ARMA DE FOGO! Em conformidade com o estatuto do desarmamento (lei 10826/03). O interessado devereá obter **AUTORIZAÇÃO PARA AQUISIÇÃO DE ARMA DE FOGO.** A AUTORIZAÇÃO PARA AQUISIÇÃO DE ARMA DE FOGO deverá ser enviada para a loja juntamente com cópia do RH, CPF e comprovante de residência. Diante do recebimento, enviaremos a Nota Fiscal com a numeração e as características da arma para efetuar o registro. Deverá ser enviada uma fotocópia autenticada do registro, para a emissão da guia de tráfego e envio da arma.<br/><br/> A arma de fogo só poderá ser enviada após a emissão do registro e guia de tráfego.",
+      "blockClass":"alert-product"
+    }
+  },
+  "flex-layout.row#product-main": {
+    "props": {
+      "colGap": 7,
+      "rowGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7,
+      "paddingBottom": 7
+    },
+    "children": [
+      "flex-layout.col#stack",
+      "flex-layout.col#right-col"
+    ]
+  },
+
+  "stack-layout": {
+    "children": [
+      "flex-layout.row#product-image",
+      "product-specification-badges"
+    ]
+  },
+
+  "product-specification-badges": {
+    "props": {
+      "specificationGroupName": "Group",
+      "specificationName": "On Sale",
+      "visibleWhen": "True",
+      "displayValue": "SPECIFICATION_NAME"
+    }
+  },
+
+  "flex-layout.col#stack": {
+    "children": ["stack-layout"],
+    "props": {
+      "width": "60%",
+      "rowGap": 0
+    }
+  },
+  "flex-layout.row#product-image": {
+    "children": ["product-images"]
+  },
+  "product-images": {
+    "props": {
+      "displayThumbnailsArrows": true
+    }
+  },
+  "flex-layout.col#right-col": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    },
+    "children": [
+      "product-name#productDetail-name",
+      // "product-highlights",
+      "product-specifications",       
+      // "product-identifier.product",
+      "product-rating-summary",
+      "product-price#product-details",
+      // "product-separator",
+      // "product-quantity",
+      "sku-selector",
+      "product-assembly-options",
+      "flex-layout.row#buy-button",
+      "flex-layout.row#seal-security",
+      "availability-subscriber",
+      "shipping-simulator"
+      // "share#default"
+    ]
+  },
+  "product-name#productDetail-name":{
+    "props":{
+      "blockClass":"productDetails-name"
+    }
+  },
+  "product-identifier.product":{
+    "props":{
+      "blockClass":"reference-product"
+    }
+  },
+  "product-price#product-details": {
+    "props": {
+      "showInstallments": true,
+      "showSavings": true,
+      "blockClass":"productDetails-price"
+    }
+  },
+
+  "flex-layout.row#buy-button": {
+    "props": {
+      "marginTop": 4,
+      "marginBottom": 7
+    },
+    "children": [
+      "buy-button#btn-productDetail"
+    ]
+  },
+  "buy-button#btn-productDetail":{
+    "props":{
+      "blockClass":"btn-productDetail"
+    }
+  },
+  "flex-layout.row#seal-security":{
+    "children":[
+      "rich-text#securitySell"
+    ]
+  },
+  "rich-text#securitySell":{
+    "props":{
+      "text":"Compra **Segura**",
+      "blockClass":"text-securitySell"
+    }
+  },  
+  "flex-layout.row#product-description":{
+    "children":[
+      "product-description"
+    ],
+    "props":{
+      "blockClass":"productDetail-description"
+    }
+  },
+  "product-description":{
+    "props":{
+      "collapseContent":false
+    }
+  }
+
+}

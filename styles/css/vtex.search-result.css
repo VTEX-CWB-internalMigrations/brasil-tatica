@@ -1,0 +1,19 @@
+.totalProducts--layout{
+    text-align: left;
+}
+
+.gallery{
+    padding-left:2em;
+}
+
+.galleryTitle--layout{
+    margin:.2em 0 1em;
+}
+
+.filters--layout{
+    width: 200px    
+}
+
+.buttonShowMore{
+    margin: 1em 0 0;
+}

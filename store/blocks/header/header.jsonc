@@ -1,0 +1,160 @@
+{
+  "header": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "header-row#1-desktop",
+      "header-row#2-desktop"
+    ]
+  },
+  "header-row#1-desktop":{
+    "children":[
+      "rich-text#contact-header",
+      "header-spacer",
+      "login"
+    ],
+    "props":{
+      "inverted":true
+    }    
+  },
+  "rich-text#contact-header":{
+    "props":{
+      "text":"Televendas (41) 3015-0328  /  contato@brasiltatica.com.br",
+      "blockClass":"contact-header"
+    }
+  },
+  "login": {
+    "props": {
+      "emailAndPasswordTitle": "LOGIN",
+      "accessCodeTitle": "Receber código",
+      "emailPraceholder": "E-mail",
+      "passwordPlaceholder": "Senha",
+      "showPasswordVerificationIntoTooltip": true,
+      "blockClass":"login-desktop"
+    }
+  },  
+  "header-row#2-desktop":{
+    "children":[
+      "logo#desktop",
+      "category-menu",
+      // "header-spacer",
+      "search-bar",
+      "minicart"
+    ],
+    "props":{
+      "sticky": true
+    }  
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/logo-header___a2fdf2d3cf5381f93bb641f2030fadd2.png",
+      "width": "160",
+      "blockClass":"logo-desktop"
+    }
+  },  
+  "category-menu":{
+    "props": {
+      "showPromotionCategory": false,
+      "showGiftCategory": false,
+      "showAllDepartments": false,
+      "showSubcategories": false,
+      "menuDisposition": "left",
+      "blockClass":"menu-desktop"
+    }    
+  },
+  "search-bar":{
+    "props":{
+      "placeholder": "Buscar",
+      "hasIconRight":false
+    }
+  },
+  "minicart": {
+    "blocks": [
+      "product-summary"
+    ],
+    "props": {
+      "type": "popup",
+      "showRemoveButton": true,
+      "showDiscount": true,
+      "showSku": true,
+      "labelMiniCartEmpty": "Carrinho vazio",
+      "labelButtonFinishShopping": "Ir para o checkout",
+      "iconLabel":"",
+      "showTotalItemsQty":true,
+      "enableQuantitySelector": true,
+      "maxQuantity": 10,
+      "labelClasses": "label-minicart tst-minicart",
+      "iconClasses":"miniCart-icon"
+    }
+  },    
+
+  // Mobile
+
+  "header-layout.mobile": {
+    "children": [
+      "header-row#-mobile-contact",
+      "header-row#1-mobile",
+      "header-row#search-bar"
+    ]
+  },
+  "header-row#-mobile-contact":{
+    "children":[      
+      "rich-text#contact-header"      
+    ],
+    "props":{
+      "inverted":true
+    }
+  },
+  "header-row#1-mobile": {
+    "children": [
+      "drawer",
+      "logo#mobile",
+      "header-spacer",
+      "login",
+      "minicart"
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "main-header-mobile"
+    }
+  },
+  "drawer": {
+    "children": [
+      // "menu#drawer"
+      // "category-menu#mobile",
+      "vtex.menu@2.x:menu#footer-mobile"
+      // "vtex.menu@2.x:menu#menumobile"
+    ]
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Brasil Tática | Armas e Acessórios",
+      "href": "/",
+      "url": "https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/logo-header___a2fdf2d3cf5381f93bb641f2030fadd2.png",
+      "width": "160"
+    }
+  },
+  // Header 2
+  "header-row#search-bar":{
+    "children":[
+      "search-bar"      
+    ],
+    "props":{
+      "blockClass":"content-searchBar"
+    }
+  }  
+  
+}

@@ -1,0 +1,353 @@
+{
+  "store.home": {
+    "blocks": [
+      "carousel#default",
+      "flex-layout.row#banner-featured",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "shelf#home",
+      "flex-layout.row#shelf-special",
+      "flex-layout.row#bannerMiddle-row",
+      "tab-layout#shelf-tabs",
+      "flex-layout.row#bannerFooter-row",
+      "newsletter"
+    ]
+  },
+
+  // Caroussel
+  "carousel#default": {
+    "props": {
+      "autoplay": false,
+      "banners": [
+        {
+          "image": "https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/banner-01___01e2fe83dce5545580c2a5a5f5079da6.jpg",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        },
+        {
+          "image": "https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/banner-01___01e2fe83dce5545580c2a5a5f5079da6.jpg",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        }
+      ],
+      "height": 455,
+      "showArrows": true,
+      "showDots": true
+    }
+  },
+
+
+  // Banners featured
+  "flex-layout.row#banner-featured":{
+    "children":[
+      "flex-layout.col#featured1",
+      "flex-layout.col#featured2"
+    ],
+    "props":{
+      "blockClass":"banner-featured-content"
+    }
+  },
+  "flex-layout.col#featured1":{
+    "children":[
+      "image#featured-image-01"
+    ],
+    "props":{
+      "blockClass":"banner-featured-01"
+    }
+  },
+  "image#featured-image-01":{
+    "props":{
+      "src": "https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/featured-01___60178c661ac300e50d27d612326d02bf.jpg",
+      "maxHeight": "100%",
+      "maxWidth": "100%"
+    }
+  },
+  "flex-layout.col#featured2":{
+    "children":[
+      "image#featured-image-02"
+    ],
+    "props":{
+      "blockClass":"banner-featured-02"
+    }    
+  },
+  "image#featured-image-02":{
+    "props":{
+      "src": "https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/featured-02___d9fef2aa7d6e5de9df2bebf35a95dd25.jpg",
+      "maxHeight": "100%",
+      "maxWidth": "100%"
+    }
+  },    
+
+  // Shelf Primary
+  "shelf#home": {
+    "blocks":[
+      "product-summary.shelf"
+    ],
+    "props": {
+      "blockClass":"shelf-featured",
+      "orderBy": "OrderByTopSaleDESC",
+      "paginationDotsVisibility": "desktopOnly",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 3,
+        "minItemsPerPage": 1.5,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "REVÓLVERES"
+      }
+    }
+  },
+  "product-summary.shelf": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      // "product-summary-space",
+      "product-summary-price",
+      "product-summary-buy-button"
+    ],
+    "props":{
+      "blockClass":"shelf-shelf-li"
+    }
+  },
+  "product-summary-name":{
+    "props":{
+      "blockClass":"shelf-nameProduct-featured"
+    }
+  },
+
+  // Shelf 02
+  "flex-layout.row#shelf-special":{
+    "children":[
+      "flex-layout.col#shelf-special01",
+      "flex-layout.col#shelf-special02"
+    ],
+    "props":{
+      "blockClass":"content-bannerSpecial"
+    }
+  },
+  "flex-layout.col#shelf-special01":{
+    "children":[
+      "image#banner-shelfSpecial01"
+    ],
+    "props":{
+      "width":"30%",
+      "blockClass":"content-bannerSpecial"
+    }
+  },
+  "image#banner-shelfSpecial01":{
+    "props":{
+      "src": "https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/shelf-special01___b1b093a7f2a5290886e42e34e2e0b63a.jpg",
+      "maxHeight": "400px",
+      "blockClass":"img-bannerSpecial"
+    }    
+  },
+  "flex-layout.col#shelf-special02":{
+    "children":[
+      "shelf#special"
+    ]
+  },
+  "shelf#special": {
+    "blocks":[
+      "product-summary.shelf#special"
+    ],
+    "props": {
+      "blockClass":"shelf-special",
+      "orderBy": "OrderByTopSaleDESC",
+      "paginationDotsVisibility": "desktopOnly",
+      "productList": {
+        "maxItems": 4,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 4,
+        "scroll": "BY_PAGE",
+        "arrows": false,
+        "dots":false,
+        "titleText": ""
+      }
+    }
+  },
+
+  "product-summary.shelf#special": {
+    "children": [
+      "product-summary-image#special",
+      "product-summary-name#special",
+      "product-summary-price#special",
+      "product-summary-buy-button#special"
+    ],
+    "props":{
+      "blockClass":"shelf-special-li"
+    }
+  },  
+  "product-summary-image#special":{
+    "props":{
+      "blockClass":"image-special"
+    }
+  },
+  "product-summary-name#special":{
+    "props":{
+      "blockClass":"name-special"
+    }
+  },  
+  "product-summary-price#special":{
+    "props":{
+      "blockClass":"price-special"
+    }
+  }, 
+  "product-summary-buy-button#special":{
+    "props":{
+      "blockClass":"buyButton-special"
+    }
+  },     
+
+  // Banner Middle
+  "flex-layout.row#bannerMiddle-row":{
+    "children":[
+      "info-card#info-middle"
+    ],
+    "props":{
+      "blockClass":"content-infoCard-middle"
+    }
+  },
+  "info-card#info-middle":{
+    "props":{
+      "id": "info-card-middle",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/banner-footer___6650c84b62dc6b2b49f754982e35a770.jpg",
+      "headline": "Entregamos em todo o Brasil<br>a mais de 17 anos atuando no mercado de armas, com responsabilidade, profissionalismo e respeito pelos nossos clientes.",
+      "callToActionText": "",
+      "callToActionUrl": "",
+      "blockClass": "info-card-middle",
+      "textAlignment": "center"      
+    }
+  },
+  
+  // Shelf tabs
+  "tab-layout#shelf-tabs": {
+    "children": [
+      "tab-list#shelfTable",
+      "tab-content#shelfTable"
+    ],
+    "props": {
+      "blockClass": "shelf-table"
+    }
+  },
+  "tab-list#shelfTable": {
+    "children": [
+      "tab-list.item#shelfTable-01",
+      "tab-list.item#shelfTable-02"
+      ]
+  },
+  "tab-list.item#shelfTable-01": {
+    "props": {
+      "tabId": "shelfTable-01",
+      "label": "Coldres",
+      "defaultActiveTab": true,
+      "blockClass":"shelfTable-button"
+    }
+  },
+  "tab-list.item#shelfTable-02": {
+    "props": {
+      "tabId": "shelfTable-02",
+      "label": "Acessórios",
+      "blockClass":"shelfTable-button"
+    }
+  },
+  "tab-content#shelfTable": {
+    "children": [
+      "tab-content.item#content-shelfTable-01",
+      "tab-content.item#content-shelfTable-02"
+    ]
+  },
+  "tab-content.item#content-shelfTable-01": {
+    "children": [
+      "shelf#shelfTables-01"
+    ],
+    "props": {
+      "tabId": "shelfTable-01"
+    }
+  },
+  "tab-content.item#content-shelfTable-02": {
+    "children": [
+      "shelf#shelfTables-02"
+    ],
+    "props": {
+      "tabId": "shelfTable-02"
+    }
+  },  
+  "shelf#shelfTables-01": {
+    "blocks":[
+      "product-summary.shelf#table"
+    ],
+    "props": {
+      "blockClass":"shelf-table",
+      "orderBy": "OrderByTopSaleDESC",
+      "paginationDotsVisibility": "hidden",
+      "showTitle":"false",
+      "productList": {
+        "maxItems": 16,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 1.5,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": ""
+      }
+    }
+  },
+  "shelf#shelfTables-02": {
+    "blocks":[
+      "product-summary.shelf#table"
+    ],
+    "props": {
+      "blockClass":"shelf-table",
+      "orderBy": "OrderByTopSaleDESC",
+      "paginationDotsVisibility": "hidden",
+      "showTitle":"false",
+      "productList": {
+        "maxItems": 16,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 1.5,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": ""
+      }
+    }
+  },
+  "product-summary.shelf#table": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-summary-price",
+      "product-summary-buy-button"
+    ]
+  }, 
+
+  // Featured Product
+  "flex-layout.row#bannerFooter-row":{
+    "children":[
+      "info-card#info-footer"
+    ],
+    "props":{
+      "blockClass":"content-infoCard-Footer"
+    }
+  },
+  "info-card#info-footer":{
+    "props":{
+      "id": "info-card-home",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/banner-footer___6650c84b62dc6b2b49f754982e35a770.jpg",
+      "headline": "Proteja seu bem mais precioso<br>SUA FAMÍLIA",
+      "callToActionText": "VER ARMAS",
+      "callToActionUrl": "/armas-de-fogo",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"      
+    }
+  },
+
+  // Newsletter
+  "newsletter":{
+    "props":{
+      "label":"Cadastre-se em nossa newsletter e receba notícias sobre a Brasil Tática e o mercado de armas",
+      "submit":"Cadastrar",
+      "blockClass":"content-newsletter"
+    }
+  }
+}
