@@ -19,8 +19,7 @@
       "rich-text#page02",
       "rich-text#page03",
       "rich-text#page04",
-      "rich-text#page05",
-      "rich-text#page06"
+      "rich-text#page05"
     ]
   },
   /* Intitutional */
@@ -54,12 +53,12 @@
       "blockClass":"link-intitutional"
     }
   },    
-  "rich-text#page06":{
+  /* "rich-text#page06":{
     "props":{
       "text":"[Dúvidas](/duvidas)",
       "blockClass":"link-intitutional"
     }
-  },
+  }, */
   /* Footer row 2 */    
   "flex-layout.row#footer-2-desktop":{
     "children":[
