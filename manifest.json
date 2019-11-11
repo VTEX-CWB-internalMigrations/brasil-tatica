@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "brasil-tatica",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "builders": {
     "styles": "1.x",
     "store": "0.x",
@@ -40,7 +40,7 @@
     "vtex.stack-layout": "0.x",
     "vtex.product-specification-badges": "0.x",
     "vtex.category-menu": "2.x",
-    "vtex.tab-layout":"0.x",
+    "vtex.tab-layout": "0.x",
     "vtex.sandbox": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
