@@ -29,7 +29,8 @@
 .link-first-intitutional{
   justify-content: center;
 }
-.container--link-first-intitutional .link--text-copyright{
+.container--link-first-intitutional .link--text-copyright,
+.container--link-first-intitutional .link--footer-title{
   color:#fff;
   border-bottom: 1px solid #f60;
   width: auto !important;
@@ -37,7 +38,8 @@
   padding-bottom: .5em;
 }
 
-.container--link-intitutional .link--text-copyright{
+.container--link-intitutional .link--text-copyright,
+.container--link-intitutional .link--footer-title{
   color:#999;
   text-decoration: none;
 }
