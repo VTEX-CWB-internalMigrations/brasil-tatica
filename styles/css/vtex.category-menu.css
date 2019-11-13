@@ -16,7 +16,7 @@
       height:auto;
       padding:.5em 0;
     }
-    .itemContainer:first-child .itemContainer ul{justify-content: left;}
+    .itemContainer:first-child .itemContainer ul{justify-content: left;overflow: hidden;}
     .itemContainer:first-child .itemContainer ul li{width:190px;}
 }
 @media only screen and (min-width: 80em){
