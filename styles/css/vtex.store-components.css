@@ -4,6 +4,9 @@
   max-width: 200px;
   width: 200px;  
 }
+.logoImage--logo-desktop{
+  width:200px !important;
+}
 /*
 .searchBarContainer label > div{border:0}
 .searchBarContainer input{text-align: right;}

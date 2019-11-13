@@ -29,6 +29,11 @@
 .link-first-intitutional{
   justify-content: center;
 }
+
+.container--text-copyright{
+  justify-content: center;
+}
+
 .container--link-first-intitutional .link--text-copyright,
 .container--link-first-intitutional .link--footer-title{
   color:#fff;
