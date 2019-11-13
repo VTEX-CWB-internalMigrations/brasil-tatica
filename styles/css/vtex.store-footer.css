@@ -1,5 +1,5 @@
 .footerLayout{
-  background: #161616;  
+  background: #101010;  
   margin: 4em 0 0;
 }
 
@@ -9,6 +9,6 @@
 
 @media only screen and (min-width: 40em){
   .acceptedPaymentMethodContainer{
-    justify-content: left;
+    justify-content: left !important;
   }
 }

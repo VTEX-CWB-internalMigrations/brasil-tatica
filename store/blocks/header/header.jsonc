@@ -68,8 +68,8 @@
     "props": {
       "showPromotionCategory": false,
       "showGiftCategory": false,
-      "showAllDepartments": false,
-      "showSubcategories": false,
+      "showAllDepartments": true,
+      "showSubcategories": true,
       "menuDisposition": "left",
       "blockClass":"menu-desktop"
     }    

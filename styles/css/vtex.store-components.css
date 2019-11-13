@@ -123,4 +123,5 @@
     font-size: 1.75em;
     font-style: normal;
   }
+  .searchBarContainer{max-width:11rem;}
 }
