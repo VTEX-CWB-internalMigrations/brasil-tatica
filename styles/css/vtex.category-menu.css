@@ -17,6 +17,7 @@
       padding:.5em 0;
     }
     .itemContainer:first-child .itemContainer ul{justify-content: left;overflow: hidden;}
+    .itemContainer:first-child .itemContainer span{    background: url(https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/icon-menu___d8dde54….png) no-repeat center left scroll transparent;color: transparent;width: 20px;}
     .itemContainer:first-child .itemContainer ul li{width:190px;}
 }
 @media only screen and (min-width: 80em){
