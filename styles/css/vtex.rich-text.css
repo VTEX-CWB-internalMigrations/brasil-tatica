@@ -113,6 +113,9 @@
   text-align: center;
 }
 
+.container--deals{justify-content: center;}
+.container--deals .paragraph{margin:.3em 0;font-size:.9em;text-align: center;}
+
 @media only screen and (min-width: 80em){
   .container--contact-header .paragraph{
     font-size: .9em;

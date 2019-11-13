@@ -1,6 +1,7 @@
 {
   "store.home": {
     "blocks": [
+      "flex-layout.row#deals",
       "carousel#default",
       "flex-layout.row#banner-featured",
       /* You can make references to blocks defined in other files.
