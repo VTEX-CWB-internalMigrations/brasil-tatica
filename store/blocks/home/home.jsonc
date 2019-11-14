@@ -7,11 +7,11 @@
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "shelf#home",
+      "flex-layout.row#banners-segmented",      
       "flex-layout.row#shelf-special",
       "flex-layout.row#bannerMiddle-row",
       "tab-layout#shelf-tabs",
       "flex-layout.row#bannerFooter-row",
-      "flex-layout.row#banners-segmented",
       "newsletter"
     ]
   },
@@ -352,7 +352,10 @@
       "flex-layout.col#banners-segmented-02",
       "flex-layout.col#banners-segmented-03",
       "flex-layout.col#banners-segmented-04"
-    ]
+    ],
+    "props":{
+      "blockClass":"content-bannersSegmented"
+    }
   },
   "flex-layout.col#banners-segmented-01":{
     "children":[
