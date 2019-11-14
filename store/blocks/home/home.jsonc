@@ -11,6 +11,7 @@
       "flex-layout.row#bannerMiddle-row",
       "tab-layout#shelf-tabs",
       "flex-layout.row#bannerFooter-row",
+      "flex-layout.row#banners-segmented",
       "newsletter"
     ]
   },
@@ -342,6 +343,61 @@
       "textAlignment": "center"      
     }
   },
+
+  // Banners segmentados
+
+  "flex-layout.row#banners-segmented":{
+    "children":[
+      "flex-layout.col#banners-segmented-01",
+      "flex-layout.col#banners-segmented-02",
+      "flex-layout.col#banners-segmented-03",
+      "flex-layout.col#banners-segmented-04"
+    ]
+  },
+  "flex-layout.col#banners-segmented-01":{
+    "children":[
+      "image#segmented01"
+    ]
+  },
+  "image#segmented01":{
+    "props":{
+      "src":"https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/segmented001___cbb554ac56daa350165451842e9f71fc.jpg",
+      "link":"/"
+    }
+  },
+  "flex-layout.col#banners-segmented-02":{
+    "children":[
+      "image#segmented02"
+    ]
+  },
+  "image#segmented02":{
+    "props":{
+      "src":"https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/segmented002___fc7b2b213ab6fc1447d99b112625fc4f.jpg",
+      "link":"/"
+    }
+  },  
+  "flex-layout.col#banners-segmented-03":{
+    "children":[
+      "image#segmented03"
+    ]
+  },
+  "image#segmented03":{
+    "props":{
+      "src":"https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/segmented003___6893d0456e66fa9c6245c14def1fc6dc.jpg",
+      "link":"/"
+    }
+  },  
+  "flex-layout.col#banners-segmented-04":{
+    "children":[
+      "image#segmented04"
+    ]
+  },
+  "image#segmented04":{
+    "props":{
+      "src":"https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/segmented003___6893d0456e66fa9c6245c14def1fc6dc.jpg",
+      "link":"/"
+    }
+  },     
 
   // Newsletter
   "newsletter":{
