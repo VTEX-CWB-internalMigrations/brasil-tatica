@@ -35,7 +35,8 @@
 }
 
 .container--link-first-intitutional .link--text-copyright,
-.container--link-first-intitutional .link--footer-title{
+.container--link-first-intitutional .link--footer-title,
+.container--link-first-intitutional .link--link-first-intitutional{
   color:#fff;
   border-bottom: 1px solid #f60;
   width: auto !important;
@@ -44,7 +45,8 @@
 }
 
 .container--link-intitutional .link--text-copyright,
-.container--link-intitutional .link--footer-title{
+.container--link-intitutional .link--footer-title,
+.container--link-intitutional .paragraph--link-intitutional .link--link-intitutional{
   color:#999;
   text-decoration: none;
 }
