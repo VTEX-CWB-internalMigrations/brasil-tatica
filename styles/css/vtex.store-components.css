@@ -58,7 +58,7 @@
 }
 
 .price_sellingPriceContainer--productDetails-price{
-  margin: 1em 0;
+  margin: 1em 0 0;
 }
 
 .productDescriptionTitle{
@@ -96,7 +96,7 @@
 .specificationsTableSpecificationHeading,
 .specificationItemProperty,
 .specificationItemSpecifications{
-  font-size: .9em;
+  font-size: .8em;
   padding: .3em;
   border-top:0;
   border-bottom: 1px solid #ddd;
@@ -106,7 +106,6 @@
   .specificationsTablePropertyHeading,
   .specificationsTableSpecificationHeading{
     font-weight: bold;
-    text-align: center;
     color:#000;
   }
 
@@ -115,6 +114,8 @@
     width:10%;
     min-width:125px;
     background:#e6e6e6;
+    text-transform: lowercase;
+    text-align: right;
   }
 
   .imageElementLink--banner-segment-img:hover,
@@ -126,5 +127,14 @@
     font-size: 1.75em;
     font-style: normal;
   }
+  .price_installmentContainer--productDetails-price{
+    color:#000;
+    font-weight:bold;
+    padding-left:1.5em;
+  }
+  
+}
+
+@media only screen and (min-width: 80em){
   .searchBarContainer{max-width:11rem;}
 }
