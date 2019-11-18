@@ -21,7 +21,7 @@
 .flexRow--content-bannerSpecial{display:none;}
 .flexRow--deals{background:#d7d7d7;padding:.1em 0;}
 .flexRow--content-bannersSegmented{margin:1em 0 5em;}
-
+.flexRow--content-bannersSegmented{display:none;}
 
 
 @media only screen and (min-width: 40em){
@@ -29,6 +29,7 @@
     .flexColChild--banner-featured-01{text-align: right;margin-top:1em;z-index:2}
     .flexColChild--banner-featured-02{text-align: left;margin-top:1em;z-index: 2;}
     .flexRow--content-infoCard-middle{display:block;margin:4em 0 1em;}
+    .flexRow--content-bannersSegmented{display:block;}
 }
 
 @media only screen and (min-width: 80em){
