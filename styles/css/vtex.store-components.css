@@ -119,7 +119,7 @@
 
   .imageElementLink--banner-segment-img:hover,
   .imageElement--banner-segment-img{opacity:.9}
-  .imageElement--banner-segment-img{max-width:100%;}
+  .imageElement--banner-segment-img{max-width:100% !important;}
   
  @media only screen and (min-width: 40em){
   .label--content-newsletter{
