@@ -80,7 +80,7 @@
     },
     "children": [
       "product-name#productDetail-name",
-      // "product-highlights",
+      "product-highlights",
       "product-specifications",       
       // "product-identifier.product",
       "product-rating-summary",
