@@ -85,8 +85,14 @@
     ],
     "props": {
       "blockClass":"shelf-featured",
+      "showBadge": true,
+      "badgeText": "OFF",      
       "orderBy": "OrderByTopSaleDESC",
+      "showListPrice": true,
       "paginationDotsVisibility": "desktopOnly",
+      "showLabels": true,
+      "showInstallments": true,
+      "showSavings": true,      
       "productList": {
         "maxItems": 10,
         "itemsPerPage": 3,
@@ -154,6 +160,10 @@
       "blockClass":"shelf-special",
       "orderBy": "OrderByTopSaleDESC",
       "paginationDotsVisibility": "desktopOnly",
+      "showListPrice": true,
+      "showLabels": true,
+      "showInstallments": true,
+      "showSavings": true,          
       "productList": {
         "maxItems": 4,
         "itemsPerPage": 4,
@@ -282,6 +292,10 @@
       "blockClass":"shelf-table",
       "orderBy": "OrderByTopSaleDESC",
       "paginationDotsVisibility": "hidden",
+      "showListPrice": true,
+      "showLabels": true,
+      "showInstallments": true,
+      "showSavings": true,          
       "showTitle":"false",
       "productList": {
         "maxItems": 16,
@@ -301,6 +315,10 @@
       "blockClass":"shelf-table",
       "orderBy": "OrderByTopSaleDESC",
       "paginationDotsVisibility": "hidden",
+      "showListPrice": true,
+      "showLabels": true,
+      "showInstallments": true,
+      "showSavings": true,          
       "showTitle":"false",
       "productList": {
         "maxItems": 16,
