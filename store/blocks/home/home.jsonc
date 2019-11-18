@@ -10,8 +10,11 @@
       "flex-layout.row#banners-segmented",      
       "flex-layout.row#shelf-special",
       "flex-layout.row#bannerMiddle-row",
+      "flex-layout.row#featured1-grid",
+      "flex-layout.row#featured2-grid",
+      "flex-layout.row#featured3-grid",
+      "flex-layout.row#featured4-grid",
       "tab-layout#shelf-tabs",
-      "flex-layout.row#bannerFooter-row",
       "newsletter"
     ]
   },
@@ -109,10 +112,16 @@
       "product-summary-name",
       // "product-summary-space",
       "product-summary-price",
-      "product-summary-buy-button"
+      "rich-text#buyButton"
+      //"product-summary-buy-button"
     ],
     "props":{
       "blockClass":"shelf-shelf-li"
+    }
+  },
+  "rich-text#buyButton":{
+    "props":{
+      "text":"teste"
     }
   },
   "product-summary-name":{
@@ -230,6 +239,84 @@
       "textAlignment": "center"      
     }
   },
+  "flex-layout.row#featured1-grid":{
+    "children":[
+      "info-card#featured01"
+    ]
+  },
+  "flex-layout.row#featured2-grid":{
+    "children":[
+      "info-card#featured02"
+    ]
+  },  
+  "flex-layout.row#featured3-grid":{
+    "children":[
+      "info-card#featured03"
+    ]
+  },    
+  "flex-layout.row#featured4-grid":{
+    "children":[
+      "info-card#featured04"
+    ]
+  },    
+  "info-card#featured01":{
+    "props":{
+      "id": "info-card-featured1",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/Shotgun_for_Hunting_in_Jungle_HD_Desktop_Images___95a66d3c305058ac3c782fd97ddbc275.jpg",
+      "headline": "ARMAS DE CAÇA",
+      "subhead": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "callToActionText": "ver armas",
+      "callToActionUrl": "/armas-de-fogo",
+      "blockClass": "info-card-featured",
+      "textAlignment": "right"       
+    }
+  },
+  "info-card#featured02":{
+    "props":{
+      "id": "info-card-featured4",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/457894ac923a6eb49af29eae45f637ca___3605abda5da32b13245446e67dc56358.jpg",
+      "headline": "KIT DE LIMPEZA",
+      "subhead": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "callToActionText": "ver kits",
+      "callToActionUrl": "/armas-de-fogo",
+      "blockClass": "info-card-featured",
+      "textAlignment": "left"     
+    }
+  },  
+  "info-card#featured03":{
+    "props":{
+      "id": "info-card-featured3",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/Weapon-ammunition-bullets_3840x2160___872dcb3abd7ae110f636bdd5278f9a12.jpg",
+      "headline": "CAIXAS PARA MUNIÇÃO",
+      "subhead": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "callToActionText": "ver caixas",
+      "callToActionUrl": "/armas-de-fogo",
+      "blockClass": "info-card-featured",
+      "textAlignment": "right"       
+    }
+  }, 
+  "info-card#featured04":{
+    "props":{
+      "id": "info-card-featured4",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/Shot_Gun_Weapon_Closeup_HD_Desktop_Wallpaper_Background___29b68ab6e44303d765a5b737bb537a63.jpg",
+      "headline": "ESPINGARDAS",
+      "subhead": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "callToActionText": "ver espingardas",
+      "callToActionUrl": "/armas-de-fogo",
+      "blockClass": "info-card-featured",
+      "textAlignment": "left"        
+    }
+  },   
+
+  
   
   // Shelf tabs
   "tab-layout#shelf-tabs": {
@@ -339,28 +426,6 @@
     ]
   }, 
 
-  // Featured Product
-  "flex-layout.row#bannerFooter-row":{
-    "children":[
-      "info-card#info-footer"
-    ],
-    "props":{
-      "blockClass":"content-infoCard-Footer"
-    }
-  },
-  "info-card#info-footer":{
-    "props":{
-      "id": "info-card-home",
-      "isFullModeStyle": true,
-      "textPosition": "left",
-      "imageUrl": "https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/banner-footer___6650c84b62dc6b2b49f754982e35a770.jpg",
-      "headline": "Proteja seu bem mais precioso<br>SUA FAMÍLIA",
-      "callToActionText": "VER ARMAS",
-      "callToActionUrl": "/armas-de-fogo",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"      
-    }
-  },
 
   // Banners segmentados
 

@@ -4,6 +4,7 @@
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#alert-product",
       "flex-layout.row#product-main",
+      // "flex-layout.row#banner-specification",
       "flex-layout.row#product-description",
       "shelf.relatedProducts",
       "product-reviews",
@@ -101,6 +102,11 @@
       "blockClass":"productDetails-name"
     }
   },
+  // "product-specifications":{
+  //  "props":{
+  //    "collapsible": "mobileOnly"      
+  //  }
+  // },
   "product-identifier.product":{
     "props":{
       "blockClass":"reference-product"
@@ -125,7 +131,8 @@
   },
   "buy-button#btn-productDetail":{
     "props":{
-      "blockClass":"btn-productDetail"
+      "blockClass":"btn-productDetail",
+      "isOneClickBuy":true
     }
   },
   "flex-layout.row#seal-security":{
@@ -138,7 +145,19 @@
       "text":"Compra **Segura**",
       "blockClass":"text-securitySell"
     }
-  },  
+  }, 
+  "flex-layout.row#banner-specification":{
+    "children":[
+      "image#banner-specification"
+    ]
+  },
+  "image#banner-specification":{
+    "props":{
+      "src": "",
+      "maxWidth": "100%",
+      "link": "https://www.vtex.com.br"
+    }
+  },
   "flex-layout.row#product-description":{
     "children":[
       "product-description"

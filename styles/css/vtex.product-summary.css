@@ -15,7 +15,6 @@
 
 @media only screen and (min-width: 40em){
     .brandName--shelf-nameProduct-featured{
-        text-transform: uppercase;
         display: block;
         font-size:1em;
         max-height: auto;

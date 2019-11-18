@@ -1,5 +1,13 @@
 .headerStickyRow{
-    border-bottom:2px solid #ddd;
+    border-bottom:0;
+}
+
+.headerRowBackground{
+    border-bottom: 1px solid #eee;
+}
+
+.headerRowBackground--header-lineOne{
+    background:#f4f4f4;
 }
 
 .headerRowContainer--content-searchBar{

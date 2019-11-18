@@ -121,7 +121,11 @@
   .imageElementLink--banner-segment-img:hover,
   .imageElement--banner-segment-img{opacity:.9}
   .imageElement--banner-segment-img{max-width:100% !important;}
-  
+
+  /* info card */
+
+  .infoCardHeadline--info-card-featured{color: #3f3f40;font-size:2em;padding: 0 1em;}
+  .infoCardSubhead--info-card-featured{padding: 0 1em;}
  @media only screen and (min-width: 40em){
   .label--content-newsletter{
     font-size: 1.75em;
@@ -132,9 +136,10 @@
     font-weight:bold;
     padding-left:1.5em;
   }
+  .infoCardSubhead--info-card-featured{max-width:35em;}
   
 }
 
 @media only screen and (min-width: 80em){
-  .searchBarContainer{max-width:11rem;}
+  .searchBarContainer{max-width:28rem;}
 }

@@ -24,7 +24,7 @@
       "login"
     ],
     "props":{
-      "inverted":true
+      "blockClass":"header-lineOne"
     }    
   },
   "rich-text#contact-header":{

@@ -121,6 +121,7 @@
 @media only screen and (min-width: 80em){
   .container--contact-header .paragraph{
     font-size: .9em;
+    margin: 0;
   }
 
 }
