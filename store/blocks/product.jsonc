@@ -213,19 +213,17 @@
       "tabId": "product-description"
     }
   },
+  "product-description":{
+    "props":{
+      "collapsible": "mobileOnly"
+    }
+  },
   "tab-content.item#product-specification": {
     "children": [
       "product-specifications"
     ],
     "props": {
       "tabId": "product-specification"
-    }
-  },
-  "product-specifications":{
-    "props":{
-      "shoudCollapseOnTabChange": true,
-      "collapsible": "mobileOnly",
-      "shoudCollapseOnTabChange": true
     }
   }
   
