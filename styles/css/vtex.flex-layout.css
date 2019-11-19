@@ -22,7 +22,7 @@
 .flexRow--deals{background:#0e2542;padding:.5em 0;}
 .flexRow--content-bannersSegmented{margin:2em 0 0;}
 .flexRow--content-bannersSegmented{display:none;}
-
+.flexRow--productDetail-tabDescription{border-top: 1px solid #ccc;}
 
 @media only screen and (min-width: 40em){
     .flexRow--banner-featured-content{display:block;}

@@ -62,10 +62,7 @@
 }
 
 .productDescriptionTitle{
-  text-transform: uppercase;
-  font-weight: bold;
-  border-bottom: 3px solid #ddd;
-  padding: .5em;  
+  display:none;
 }
 
 .carouselGaleryThumbs .swiper-slide{
@@ -90,33 +87,28 @@
 /* Specification */
 
 .specificationsTableContainer{padding:0;margin-top:1em;}
-.specificationsTitle{display:none;}
-.specificationsTable{border-spacing: inherit;}
-.specificationsTablePropertyHeading,
-.specificationsTableSpecificationHeading,
-.specificationItemProperty,
+.specificationsTitle,
+.specificationsTablePropertyHeading, 
+.specificationsTableSpecificationHeading{display:none;}
+
+.specificationsTable tr:nth-child(odd){
+  background:#f4f4f4;
+}
+.specificationItemProperty{
+  width: 40%;
+  font-size: .75rem;
+  border-right: 1px solid #bdbdbd;
+  color: #28538a;
+  font-weight: 500;
+  text-align: right;
+  text-transform: uppercase;  
+  border-bottom:0;
+}
 .specificationItemSpecifications{
-  font-size: .8em;
-  padding: .3em;
-  border-top:0;
-  border-bottom: 1px solid #ddd;
-  text-align: left;
-  }    
+  border:0;
+  font-size:.75rem;
+}
 
-  .specificationsTablePropertyHeading,
-  .specificationsTableSpecificationHeading{
-    font-weight: bold;
-    color:#000;
-  }
-
-  .specificationsTablePropertyHeading,
-  .specificationItemProperty{
-    width:10%;
-    min-width:125px;
-    background:#e6e6e6;
-    text-transform: lowercase;
-    text-align: right;
-  }
 
   .imageElementLink--banner-segment-img:hover,
   .imageElement--banner-segment-img{opacity:.9}
@@ -126,6 +118,55 @@
 
   .infoCardHeadline--info-card-featured{color: #3f3f40;font-size:2em;padding: 0 1em;}
   .infoCardSubhead--info-card-featured{padding: 0 1em;}
+
+  /* Description Product */
+
+.productDescriptionText .description-custom-top{
+    display: flex;
+}
+
+.productDescriptionText .description-custom-top .imageProduct{
+    max-width: 600px;
+    max-height: 350px;
+    overflow: hidden;
+    align-self: center;
+    width: 40%;
+    margin-right: 2em;
+}
+
+.productDescriptionText .description-custom-top .infoProduct{
+    text-align: left;
+    align-self:center;
+}
+
+.productDescriptionText .description-custom-top .infoProduct h3{
+    font-size:2em;
+    color:#000;
+    font-weight:bold;
+    margin-bottom:1em;
+}
+
+.productDescriptionText .description-custom-top .infoProduct p{
+    line-height:1.5;
+    max-width: 650px;
+}
+
+.productDescriptionText .description-custom-bottom{
+    display:flex;
+    margin-top:2em;
+    padding-bottom: 3em;
+    border-bottom: 2px solid #eee
+}
+.productDescriptionText .description-custom-bottom p{
+    margin: 0 5em;
+    line-height:2;
+    font-size: 1.1em;
+    font-weight:normal;
+    text-align: justify;
+    color: #828181;
+}
+
+
  @media only screen and (min-width: 40em){
   .label--content-newsletter{
     font-size: 1.75em;

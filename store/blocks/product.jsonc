@@ -82,8 +82,7 @@
     "children": [
       "product-name#productDetail-name",
       "product-identifier.product",
-      "product-highlights",
-      "product-specifications",       
+      "product-highlights",       
       "product-rating-summary",
       "product-price#product-details",
       // "product-separator",
@@ -160,16 +159,84 @@
   },
   "flex-layout.row#product-description":{
     "children":[
-      "product-description"
+      "tab-layout#description"
     ],
     "props":{
-      "blockClass":"productDetail-description"
+      "blockClass":"productDetail-tabDescription"
     }
   },
-  "product-description":{
+
+  "tab-layout#description": {
+    "children": [
+      "tab-list#listDescription",
+      "tab-content#contentDescription"
+    ],
+    "props": {
+      "blockClass": "content-description"
+    }
+  },
+  "tab-list#listDescription": {
+    "children": [
+      "tab-list.item#product-description",
+      "tab-list.item#product-specification"
+      ],
+      "props":{
+        "blockClass":"container-tabsDescription"
+      }
+  },
+  "tab-list.item#product-description": {
+    "props": {
+      "tabId": "product-description",
+      "label": "Visão geral",
+      "defaultActiveTab": true,
+      "blockClass":"btn-description"
+    }
+  },
+  "tab-list.item#product-specification": {
+    "props": {
+      "tabId": "product-specification",
+      "label": "Especificações",
+      "blockClass":"btn-description"
+    }
+  },
+  "tab-content#contentDescription": {
+    "children": [
+      "tab-content.item#product-description",
+      "tab-content.item#product-specification"
+    ]
+  },
+  "tab-content.item#product-description": {
+    "children": [
+      "product-description"
+    ],
+    "props": {
+      "tabId": "product-description"
+    }
+  },
+  "tab-content.item#product-specification": {
+    "children": [
+      "product-specifications"
+    ],
+    "props": {
+      "tabId": "product-specification"
+    }
+  },
+  "product-specifications":{
     "props":{
-      "collapseContent":false
+      "shoudCollapseOnTabChange": true,
+      "collapsible": "mobileOnly",
+      "shoudCollapseOnTabChange": true
     }
   }
+  
+
+
+
+
+
+
+
+
+
 
 }
