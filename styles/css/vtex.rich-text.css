@@ -118,6 +118,49 @@
 .container--deals{justify-content: center;}
 .container--deals .paragraph{margin:.3em 0;font-size:.9em;text-align: center;}
 
+.container--howBuy-title{text-align: center;justify-content: center;}
+.container--howBuy-title .headingLevel3{
+  margin-bottom: 0;
+  color: #ff6600;
+  font-size: 3em;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #262228;  
+}
+
+.container--howBuy-title .headingLevel4{
+  margin-top: 0;
+  color: #fff;
+  font-size: 2.9em;
+  text-transform: uppercase;  
+}
+.container--howBuy-title .paragraph{
+  max-width: 80em;
+  margin-top: 0;
+  color: #ccc;
+  line-height: 2;
+}
+
+.container--title-howTo-secondary{
+  justify-content: center;
+}
+
+.paragraph--title-howTo-secondary{
+  font-size: 2em;
+  color: #000;
+  text-align: center;
+  line-height: 1;
+  font-weight: bold;  
+}
+
+
+.container--title-video-howTo{
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 2em;
+  color: #ff6500;  
+}
+
 @media only screen and (min-width: 80em){
   .container--contact-header .paragraph{
     font-size: .9em;

@@ -167,6 +167,10 @@
 }
 
 
+.imageElement--img-register{
+  border-radius: 100%;
+}
+
  @media only screen and (min-width: 40em){
   .label--content-newsletter{
     font-size: 1.75em;

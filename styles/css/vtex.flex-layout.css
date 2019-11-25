@@ -24,6 +24,26 @@
 .flexRow--content-bannersSegmented{display:none;}
 .flexRow--productDetail-tabDescription{border-top: 1px solid #ccc;}
 
+
+.flexRow--background-howToBuy{
+    background: urL(https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/how-buy___cbdc6eea35d647c34fc68493ec26e848.jpg) no-repeat center scroll transparent;
+    padding:1.5em;
+    background-position: left bottom;
+}
+
+.flexRow--flex-layout-register{
+    padding:4em 0;
+}
+.flexColChild--content-register{
+    text-align: center;
+    padding: 0 2em;
+}
+.flexRow--content-howTo-shipping{
+    background: #f4f4f4;
+    padding:1.5em 0;
+    margin:1em 0;
+}
+
 @media only screen and (min-width: 40em){
     .flexRow--banner-featured-content{display:block;}
     .flexColChild--banner-featured-01{text-align: right;margin-top:1em;z-index:2}
