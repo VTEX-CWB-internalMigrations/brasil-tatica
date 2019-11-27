@@ -161,6 +161,34 @@
   color: #ff6500;  
 }
 
+.container--btn-howToBuy{
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 9999;
+  background: #ff6500;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #ff9d5c;  
+}
+
+.paragraph--btn-howToBuy{
+  margin:0;
+}
+
+.link--btn-howToBuy{
+  padding: 40px 10px 10px;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-size: .9em;
+  display: block;
+  text-decoration: none;
+  background: url(https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/gun___1c9ade07e67f2612f05c065ffdbd1e56.svg);
+  background-position: center 5px;
+  background-repeat: no-repeat;
+  background-size: 30px;
+}
+
 @media only screen and (min-width: 80em){
   .container--contact-header .paragraph{
     font-size: .9em;
