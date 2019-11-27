@@ -177,9 +177,7 @@
     font-style: normal;
   }
   .price_installmentContainer--productDetails-price{
-    color:#000;
-    font-weight:bold;
-    padding-left:1.5em;
+    text-transform: lowercase;
   }
   .infoCardSubhead--info-card-featured{max-width:35em;}
   

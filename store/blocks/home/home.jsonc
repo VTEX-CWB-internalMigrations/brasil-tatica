@@ -115,14 +115,6 @@
       "blockClass":"shelf-nameProduct-featured"
     }
   },
-  "product-summary-price":{
-    "props":{
-      "showInstallments":true,
-      "showListPriceRange":true,
-      "showSellingPriceRange":true,
-      "showListPrice":true
-    }      
-  },
   "rich-text#inCash":{
     "props":{
       "text":"5% de desconto a vista",

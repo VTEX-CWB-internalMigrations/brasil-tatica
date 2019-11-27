@@ -77,7 +77,7 @@
       "showGiftCategory": false,
       "showAllDepartments": true,
       "showSubcategories": true,
-      "menuDisposition": "left",
+      "menuDisposition": "center",
       "blockClass":"menu-desktop"
     }    
   },
