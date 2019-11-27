@@ -82,53 +82,63 @@
   },    
 
   // Shelf Primary
-  "shelf#home": {
+  "shelf#home":{
     "blocks":[
-      "product-summary.shelf"
+      "product-summary.shelf#featured"
     ],
-    "props": {
+    "props":{
       "blockClass":"shelf-featured",
-      "showBadge": true,
-      "badgeText": "OFF",      
       "orderBy": "OrderByTopSaleDESC",
-      "showListPrice": true,
-      "paginationDotsVisibility": "desktopOnly",
-      "showLabels": true,
-      "showInstallments": true,
-      "showSavings": true,      
       "productList": {
-        "maxItems": 10,
-        "itemsPerPage": 3,
-        "minItemsPerPage": 1.5,
+        "maxItems": 20,
+        "itemsPerPage": 4,
         "scroll": "BY_PAGE",
         "arrows": true,
-        "titleText": "REVÓLVERES"
-      }
+        "dots":false,
+        "titleText": "DESTAQUES"     
+      } 
     }
   },
-  "product-summary.shelf": {
-    "children": [
-      "product-summary-image",
+  "product-summary.shelf#featured":{
+    "children":[
+      "stack-layout#prodsum",
       "product-summary-name",
-      // "product-summary-space",
+      "product-rating-inline",
       "product-summary-price",
-      "rich-text#buyButton"
-      //"product-summary-buy-button"
-    ],
-    "props":{
-      "blockClass":"shelf-shelf-li"
-    }
-  },
-  "rich-text#buyButton":{
-    "props":{
-      "text":"teste"
-    }
+      "rich-text#inCash",
+      "product-identifier.summary",
+      "rich-text#buyButtonShelf"   
+    ]
   },
   "product-summary-name":{
     "props":{
       "blockClass":"shelf-nameProduct-featured"
     }
   },
+  "product-summary-price":{
+    "props":{
+      "showInstallments":true,
+      "showListPriceRange":true,
+      "showSellingPriceRange":true,
+      "showListPrice":true
+    }      
+  },
+  "rich-text#inCash":{
+    "props":{
+      "text":"5% de desconto a vista",
+      "blockClass":"inCash"
+    }
+  },
+  "rich-text#buyButtonShelf":{
+     "props":{
+       "text":"Comprar",
+       "blockClass":"btnBuy"
+     }
+  },  
+
+
+
+
 
   // Shelf 02
   "flex-layout.row#shelf-special":{
@@ -190,7 +200,9 @@
       "product-summary-image#special",
       "product-summary-name#special",
       "product-summary-price#special",
-      "product-summary-buy-button#special"
+      "rich-text#inCash",
+      // "product-summary-buy-button#special"
+      "rich-text#buyButtonShelf"
     ],
     "props":{
       "blockClass":"shelf-special-li"
@@ -422,7 +434,9 @@
       "product-summary-image",
       "product-summary-name",
       "product-summary-price",
-      "product-summary-buy-button"
+      "rich-text#inCash",
+      // "product-summary-buy-button"
+      "rich-text#buyButtonShelf"
     ]
   }, 
 
