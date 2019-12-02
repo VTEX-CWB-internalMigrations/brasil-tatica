@@ -95,7 +95,8 @@
 
 .container--text-securitySell{
   margin-top:-1.5em;
-  justify-content: center;
+  justify-content: flex-end;
+  margi-right:2em;
 }
 
 .container--text-securitySell .paragraph{
