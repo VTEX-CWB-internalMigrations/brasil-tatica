@@ -91,6 +91,7 @@
       "product-assembly-options",
       "flex-layout.row#buy-button",
       "flex-layout.row#seal-security",
+      "flex-layout.row#linkRegulation",
       "availability-subscriber",
       "shipping-simulator"
       // "share#default"
@@ -122,7 +123,8 @@
   "flex-layout.row#buy-button": {
     "props": {
       "marginTop": 4,
-      "marginBottom": 7
+      "marginBottom": 7,
+      "blockClass":"row-buyButton"
     },
     "children": [
       "buy-button#btn-productDetail"
@@ -136,20 +138,20 @@
   },
   "flex-layout.row#seal-security":{
     "children":[
-      "flex-layout.col#sealSecurity",
-      "flex-layout.col#regulation"
-    ]
+      "rich-text#securitySell" 
+    ],
+    "props":{
+      "blockClass":"row-sealSecurity"
+    }
   },
-  "flex-layout.col#sealSecurity":{
+  "flex-layout.row#linkRegulation":{
     "children":[
-      "rich-text#securitySell"      
-    ]
-  },
-  "flex-layout.col#regulation":{
-    "children":[
-      "rich-text#link-regulation"
-    ]
-  },
+      "rich-text#link-regulation" 
+    ],
+    "props":{
+      "blockClass":"row-linkRegulation"
+    }
+  },  
   "rich-text#link-regulation":{
     "props":{
       "text":"[Regulamento para comprar arma de fogo](/regulamento)",
@@ -241,6 +243,11 @@
     ],
     "props": {
       "tabId": "product-specification"
+    }
+  },
+  "product-specifications":{
+    "props":{
+      "collapsible":"never"
     }
   }
   

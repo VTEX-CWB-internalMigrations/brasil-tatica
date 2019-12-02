@@ -19,9 +19,9 @@
   },
   "header-row#1-desktop":{
     "children":[
-      "rich-text#contact-header",
-      "header-spacer",
       "login",
+      "header-spacer",
+      "rich-text#contact-header",
       "rich-text#btn-howToBuy"
     ],
     "props":{

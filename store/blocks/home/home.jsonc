@@ -135,29 +135,29 @@
   // Shelf 02
   "flex-layout.row#shelf-special":{
     "children":[
-      "flex-layout.col#shelf-special01",
+      // "flex-layout.col#shelf-special01",
       "flex-layout.col#shelf-special02"
     ],
     "props":{
       "blockClass":"content-bannerSpecial"
     }
   },
-  "flex-layout.col#shelf-special01":{
-    "children":[
-      "image#banner-shelfSpecial01"
-    ],
-    "props":{
-      "width":"30%",
-      "blockClass":"content-bannerSpecial"
-    }
-  },
-  "image#banner-shelfSpecial01":{
-    "props":{
-      "src": "https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/shelf-special01___b1b093a7f2a5290886e42e34e2e0b63a.jpg",
-      "maxHeight": "400px",
-      "blockClass":"img-bannerSpecial"
-    }    
-  },
+  // "flex-layout.col#shelf-special01":{
+  //   "children":[
+  //     "image#banner-shelfSpecial01"
+  //   ],
+  //   "props":{
+  //     "width":"30%",
+  //     "blockClass":"content-bannerSpecial"
+  //   }
+  // },
+  // "image#banner-shelfSpecial01":{
+  //   "props":{
+  //     "src": "https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/shelf-special01___b1b093a7f2a5290886e42e34e2e0b63a.jpg",
+  //     "maxHeight": "400px",
+  //     "blockClass":"img-bannerSpecial"
+  //   }    
+  // },
   "flex-layout.col#shelf-special02":{
     "children":[
       "shelf#special"
@@ -180,7 +180,7 @@
         "itemsPerPage": 4,
         "minItemsPerPage": 4,
         "scroll": "BY_PAGE",
-        "arrows": false,
+        "arrows": true,
         "dots":false,
         "titleText": ""
       }

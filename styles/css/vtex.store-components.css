@@ -53,7 +53,7 @@
 }
 
 .productBrand--productDetails-name{
-  font-size:1.5em;
+  font-size:1.2em;
   font-weight: bold;
 }
 
@@ -83,7 +83,8 @@
 }
 
 .productImage{background:#fff;}
-
+.highlightContent{display:none;}
+.skuSelectorNameContainer{margin:1.5em 0 0;}
 /* Specification */
 
 .specificationsTableContainer{padding:0;margin-top:1em;}
@@ -94,6 +95,8 @@
 .specificationsTable tr:nth-child(odd){
   background:#f4f4f4;
 }
+
+
 .specificationItemProperty{
   width: 40%;
   font-size: .75rem;
@@ -183,6 +186,9 @@
   
 }
 
+@media only screen and (min-width: 40em){
+  .searchBarContainer{max-width:14rem;}
+}
 @media only screen and (min-width: 80em){
-  .searchBarContainer{max-width:28rem;}
+  .searchBarContainer{max-width:14rem;}
 }

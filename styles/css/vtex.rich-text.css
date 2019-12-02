@@ -66,6 +66,7 @@
   background: #fff;
   border:1px solid #048a7d;
   border-radius: 5px;  
+  width: 90% !important;
 }
 .container--alert-product .heading-level-5{
   margin: .2em;
@@ -164,7 +165,7 @@
 .container--btn-howToBuy{
   position: fixed;
   bottom: 10px;
-  left: 10px;
+  right: 10px;
   z-index: 9999;
   background: #ff6500;
   border-radius: 10px;
@@ -228,6 +229,15 @@
   color: #167ac6; 
   font-size:.9em;
   text-transform: lowercase;
+}
+
+@media only screen and (min-width: 40em){
+  .container--link-regulation{
+    text-align: center;
+    justify-content: center;
+    margin-top: -1em;
+    margin-bottom: 2em;    
+  }  
 }
 
 @media only screen and (min-width: 80em){

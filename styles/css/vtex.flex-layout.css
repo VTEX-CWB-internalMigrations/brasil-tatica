@@ -49,6 +49,13 @@
     .flexColChild--banner-featured-01{text-align: right;margin-top:1em;z-index:2}
     .flexColChild--banner-featured-02{text-align: left;margin-top:1em;z-index: 2;}
     .flexRow--content-infoCard-middle{display:block;margin:4em 0 1em;}
+    .flexRow--row-buyButton{width:60%;}
+    .flexRow--row-sealSecurity{
+        margin-top: -4.5em;
+        max-width: 10em;
+        position: absolute;
+        right: 2em;       
+    }
 }
 
 @media only screen and (min-width: 80em){
