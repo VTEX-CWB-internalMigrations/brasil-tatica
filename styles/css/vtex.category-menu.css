@@ -7,6 +7,14 @@
 .itemContainer ul{overflow:hidden;}
 .itemContainer:first-child ul{justify-content: left;}
 
+.container {
+  background-color: #0e2542;
+}
+
+.itemContainer {
+  color: #ffffff;
+}
+
 @media only screen and (min-width: 40em){
     .container{padding-left:11em;}
     /* Hover */

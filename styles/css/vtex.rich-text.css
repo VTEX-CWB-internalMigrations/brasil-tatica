@@ -232,6 +232,10 @@
   text-transform: lowercase;
 }
 
+.paragraph--deals {
+  color: #ffffff;
+}
+
 @media only screen and (min-width: 40em){
   .container--link-regulation{
     text-align: center;
