@@ -18,16 +18,9 @@
     },
     "flex-layout.row#content-intitutional":{
       "children":[
-        "rich-text#content-intitutional",
         "image#imagemInstitucional"
       ]
     },  
-    "rich-text#content-intitutional":{
-      "props":{
-        "text":"[Conteúdo da página]",
-        "blockClass":"content-intitutional"
-      }
-    },
     "image#imagemInstitucional":{
         "props":{
             "src":"https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/TabeladeAeroportos-BrasilTatica___23e2de6172d64f5a00dc73d0d6c202a2.jpg",
