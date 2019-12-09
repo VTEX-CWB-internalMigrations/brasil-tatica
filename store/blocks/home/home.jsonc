@@ -128,10 +128,6 @@
      }
   },  
 
-
-
-
-
   // Shelf 02
   "flex-layout.row#shelf-special":{
     "children":[
@@ -212,7 +208,8 @@
   },  
   "product-summary-price#special":{
     "props":{
-      "blockClass":"price-special"
+      "blockClass":"price-special",
+      "showInstallments": true
     }
   }, 
   "product-summary-buy-button#special":{
@@ -431,7 +428,11 @@
       "rich-text#buyButtonShelf"
     ]
   }, 
-
+  "product-summary-price":{
+    "props":{
+      "showInstallments": true
+    }
+  },
 
   // Banners segmentados
 

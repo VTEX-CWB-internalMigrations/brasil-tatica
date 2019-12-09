@@ -133,7 +133,8 @@
   "buy-button#btn-productDetail":{
     "props":{
       "blockClass":"btn-productDetail",
-      "isOneClickBuy":true
+      "isOneClickBuy":true,
+      "buyButtonText": "COMPRAR"
     }
   },
   "flex-layout.row#seal-security":{
@@ -146,11 +147,30 @@
   },
   "flex-layout.row#linkRegulation":{
     "children":[
-      "rich-text#link-regulation" 
+      "flex-layout.col#linkRegulation",
+      "flex-layout.col#linkAirport"
     ],
     "props":{
       "blockClass":"row-linkRegulation"
     }
+  },    
+  "flex-layout.col#linkRegulation":{
+    "children":[
+      "rich-text#link-regulation"
+    ],
+    "props":{
+      "width":"50%",
+      "blockClass":"col-linkProduct"
+    }
+  },
+  "flex-layout.col#linkAirport":{
+    "children":[
+      "rich-text#link-airport"
+    ],
+    "props":{
+      "width":"50%",
+      "blockClass":"col-linkProduct"
+    }    
   },  
   "rich-text#link-regulation":{
     "props":{
@@ -158,6 +178,12 @@
       "blockClass":"link-regulation"
     }
   },
+  "rich-text#link-airport":{
+    "props":{
+      "text":"[Tabela de aeroportos do Brasil](/frete-aeroporto)",
+      "blockClass":"link-regulation"
+    }
+  },  
   "rich-text#securitySell":{
     "props":{
       "text":"Compra **Segura**",

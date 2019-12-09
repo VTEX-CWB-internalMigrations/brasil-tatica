@@ -14,7 +14,8 @@
   "header-layout.desktop": {
     "children": [
       "header-row#1-desktop",
-      "header-row#2-desktop"
+      "header-row#2-desktop",
+      "header-row#3-desktop"
     ]
   },
   "header-row#1-desktop":{
@@ -53,8 +54,7 @@
   "header-row#2-desktop":{
     "children":[
       "logo#desktop",
-      "category-menu",
-      // "header-spacer",
+      "header-spacer",
       "search-bar",
       "minicart"
     ],
@@ -67,7 +67,6 @@
       "title": "Logo",
       "href": "/",
       "url": "https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/logo-header___a2fdf2d3cf5381f93bb641f2030fadd2.png",
-      "width": "200",
       "blockClass":"logo-desktop"
     }
   },  
@@ -106,7 +105,15 @@
       "iconClasses":"miniCart-icon"
     }
   },    
-
+  "header-row#3-desktop":{
+    "children":[
+      "category-menu"
+    ],
+    "props" :{
+      "sticky": true,
+      "blockClass": "category-menu-background"
+    }
+  },
   // Mobile
 
   "header-layout.mobile": {
@@ -151,7 +158,8 @@
       "title": "Brasil Tática | Armas e Acessórios",
       "href": "/",
       "url": "https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/logo-header___a2fdf2d3cf5381f93bb641f2030fadd2.png",
-      "width": "160"
+      "width": "190",
+      "heigth": "120"
     }
   },
   // Header 2
@@ -163,5 +171,4 @@
       "blockClass":"content-searchBar"
     }
   }  
-  
 }
