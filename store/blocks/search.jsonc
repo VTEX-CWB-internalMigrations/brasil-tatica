@@ -232,6 +232,14 @@
       //"rich-text#buyButtonShelf"
     ]    
   },
+  "cash-discount-summary":{
+    "props":{
+      "blockClass":"cash-discount",
+      "percentageNumber":5,
+      "minimumPrice":0,
+      "discountDescription":"no depósito"
+    }
+  },
   "product-summary-image":{
     "props":{
       "showBadge":false
