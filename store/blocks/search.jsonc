@@ -207,8 +207,9 @@
       "product-summary-space",
       "product-summary-price",
       "cash-discount-summary",
+      "product-summary-buy-button"
       // "product-summary-buy-button"
-      "rich-text#buyButtonShelf"
+      //"rich-text#buyButtonShelf"
     ]    
   },
   "product-summary-image":{

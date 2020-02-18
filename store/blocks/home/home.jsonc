@@ -161,7 +161,8 @@
       "product-summary-price",
       "cash-discount-summary",
       "product-identifier.summary",
-      "rich-text#buyButtonShelf"   
+      "product-summary-buy-button"
+      // "rich-text#buyButtonShelf"   
     ]
   },
   "product-summary-name":{
