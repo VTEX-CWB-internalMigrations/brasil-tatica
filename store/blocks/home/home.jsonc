@@ -7,15 +7,18 @@
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "shelf#home",
-      "flex-layout.row#banners-segmented",      
-      "flex-layout.row#shelf-special",
-      "flex-layout.row#bannerMiddle-row",
+      "shelf#home2",
+      "shelf#home3",
+      "shelf#home4",
+      // "flex-layout.row#banners-segmented",      
+      // "flex-layout.row#shelf-special",
+      // "flex-layout.row#bannerMiddle-row",
       "flex-layout.row#featured1-grid",
       "flex-layout.row#featured2-grid",
       "flex-layout.row#featured3-grid",
-      "flex-layout.row#featured4-grid",
-      "tab-layout#shelf-tabs",
-      "newsletter"
+      "flex-layout.row#featured4-grid"
+      // "tab-layout#shelf-tabs",
+      // "newsletter"
     ]
   },
 
@@ -99,13 +102,64 @@
       } 
     }
   },
+  "shelf#home2":{
+    "blocks":[
+      "product-summary.shelf#featured"
+    ],
+    "props":{
+      "blockClass":"shelf-featured",
+      "orderBy": "OrderByTopSaleDESC",
+      "productList": {
+        "maxItems": 20,
+        "itemsPerPage": 4,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "dots":false,
+        "titleText": "PISTOLAS"     
+      } 
+    }
+  },  
+  "shelf#home3":{
+    "blocks":[
+      "product-summary.shelf#featured"
+    ],
+    "props":{
+      "blockClass":"shelf-featured",
+      "orderBy": "OrderByTopSaleDESC",
+      "productList": {
+        "maxItems": 20,
+        "itemsPerPage": 4,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "dots":false,
+        "titleText": "ESPINGARDAS"     
+      } 
+    }
+  }, 
+  "shelf#home4":{
+    "blocks":[
+      "product-summary.shelf#featured"
+    ],
+    "props":{
+      "blockClass":"shelf-featured",
+      "orderBy": "OrderByTopSaleDESC",
+      "productList": {
+        "maxItems": 20,
+        "itemsPerPage": 4,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "dots":false,
+        "titleText": ""     
+      } 
+    }
+  },     
   "product-summary.shelf#featured":{
     "children":[
       "stack-layout#prodsum",
       "product-summary-name",
       "product-rating-inline",
       "product-summary-price",
-      "rich-text#inCash",
+      "cash-discount-summary",
       "product-identifier.summary",
       "rich-text#buyButtonShelf"   
     ]
@@ -115,18 +169,18 @@
       "blockClass":"shelf-nameProduct-featured"
     }
   },
-  "rich-text#inCash":{
-    "props":{
-      "text":"5% de desconto a vista",
-      "blockClass":"inCash"
-    }
-  },
   "rich-text#buyButtonShelf":{
      "props":{
        "text":"Comprar",
        "blockClass":"btnBuy"
      }
   },  
+  "cash-discount-summary":{
+    "props":{
+      "percentageNumber":5,
+      "minimumPrice":0
+    }
+  },
 
   // Shelf 02
   "flex-layout.row#shelf-special":{
@@ -188,7 +242,6 @@
       "product-summary-image#special",
       "product-summary-name#special",
       "product-summary-price#special",
-      "rich-text#inCash",
       // "product-summary-buy-button#special"
       "rich-text#buyButtonShelf"
     ],
@@ -423,7 +476,6 @@
       "product-summary-image",
       "product-summary-name",
       "product-summary-price",
-      "rich-text#inCash",
       // "product-summary-buy-button"
       "rich-text#buyButtonShelf"
     ]

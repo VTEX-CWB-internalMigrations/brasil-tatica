@@ -85,6 +85,7 @@
       "product-highlights",       
       "product-rating-summary",
       "product-price#product-details",
+      "cash-discount",
       // "product-separator",
       // "product-quantity",
       "sku-selector",
@@ -117,6 +118,13 @@
       "showInstallments": true,
       "showSavings": true,
       "blockClass":"productDetails-price"
+    }
+  },
+  "cash-discount":{
+    "props":{
+      "blockClass":"cash-discount",
+      "percentageNumber":5,
+      "minimumPrice":0
     }
   },
 

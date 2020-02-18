@@ -35,7 +35,7 @@
   justify-content: center;
 }
 .infoCardContainer--info-card-middle{margin:4em 0 2em;}
-.sellingPriceValue{font-weight: bold;color:#ff6600;}
+.sellingPriceValue{font-weight: normal;color:#333;font-size:1em;}
 .discountContainer{width:100%;}
 .discountInsideContainer{
   position: absolute;
