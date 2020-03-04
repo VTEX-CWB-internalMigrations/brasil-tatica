@@ -236,6 +236,21 @@
   color: #ffffff;
 }
 
+.container--shelfTitle{
+  display: block;
+  width: 100%;
+}
+
+.container--shelfTitle .paragraph{
+  color: #000;
+  text-align: center;
+  width: 100%;
+  display: block;
+  font-weight: 700;
+  font-size: 2.25em;
+  padding: 1.5rem 0 0;
+}
+
 @media only screen and (min-width: 40em){
   .container--link-regulation{
     text-align: center;

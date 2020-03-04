@@ -15,17 +15,19 @@
     "props": {
       "marginTop": 4
     },
-    "children": ["breadcrumb"]
+    "children": [
+      "breadcrumb"
+    ]
   },
-  "flex-layout.row#alert-product":{
-    "children":[
+  "flex-layout.row#alert-product": {
+    "children": [
       "rich-text#alert-product"
     ]
   },
-  "rich-text#alert-product":{
-    "props":{
-      "text":"# LEIA COM ATENÇÃO ANTES DE FAZER PEDIDO DE ARMA DE FOGO! Em conformidade com o estatuto do desarmamento (lei 10826/03). O interessado devereá obter **AUTORIZAÇÃO PARA AQUISIÇÃO DE ARMA DE FOGO.** A AUTORIZAÇÃO PARA AQUISIÇÃO DE ARMA DE FOGO deverá ser enviada para a loja juntamente com cópia do RH, CPF e comprovante de residência. Diante do recebimento, enviaremos a Nota Fiscal com a numeração e as características da arma para efetuar o registro. Deverá ser enviada uma fotocópia autenticada do registro, para a emissão da guia de tráfego e envio da arma.<br/><br/> A arma de fogo só poderá ser enviada após a emissão do registro e guia de tráfego.",
-      "blockClass":"alert-product"
+  "rich-text#alert-product": {
+    "props": {
+      "text": "# LEIA COM ATENÇÃO ANTES DE FAZER PEDIDO DE ARMA DE FOGO! Em conformidade com o estatuto do desarmamento (lei 10826/03). O interessado devereá obter **AUTORIZAÇÃO PARA AQUISIÇÃO DE ARMA DE FOGO.** A AUTORIZAÇÃO PARA AQUISIÇÃO DE ARMA DE FOGO deverá ser enviada para a loja juntamente com cópia do RH, CPF e comprovante de residência. Diante do recebimento, enviaremos a Nota Fiscal com a numeração e as características da arma para efetuar o registro. Deverá ser enviada uma fotocópia autenticada do registro, para a emissão da guia de tráfego e envio da arma.<br/><br/> A arma de fogo só poderá ser enviada após a emissão do registro e guia de tráfego.",
+      "blockClass": "alert-product"
     }
   },
   "flex-layout.row#product-main": {
@@ -42,14 +44,12 @@
       "flex-layout.col#right-col"
     ]
   },
-
   "stack-layout": {
     "children": [
       "flex-layout.row#product-image",
       "product-specification-badges"
     ]
   },
-
   "product-specification-badges": {
     "props": {
       "specificationGroupName": "Group",
@@ -58,16 +58,19 @@
       "displayValue": "SPECIFICATION_NAME"
     }
   },
-
   "flex-layout.col#stack": {
-    "children": ["stack-layout"],
+    "children": [
+      "stack-layout"
+    ],
     "props": {
       "width": "60%",
       "rowGap": 0
     }
   },
   "flex-layout.row#product-image": {
-    "children": ["product-images"]
+    "children": [
+      "product-images"
+    ]
   },
   "product-images": {
     "props": {
@@ -82,7 +85,7 @@
     "children": [
       "product-name#productDetail-name",
       "product-identifier.product",
-      "product-highlights",       
+      "product-highlights",
       "product-rating-summary",
       "product-price#product-details",
       "cash-discount",
@@ -98,9 +101,9 @@
       // "share#default"
     ]
   },
-  "product-name#productDetail-name":{
-    "props":{
-      "blockClass":"productDetails-name"
+  "product-name#productDetail-name": {
+    "props": {
+      "blockClass": "productDetails-name"
     }
   },
   // "product-specifications":{
@@ -108,118 +111,116 @@
   //    "collapsible": "mobileOnly"      
   //  }
   // },
-  "product-identifier.product":{
-    "props":{
-      "blockClass":"reference-product"
+  "product-identifier.product": {
+    "props": {
+      "blockClass": "reference-product"
     }
   },
   "product-price#product-details": {
     "props": {
       "showInstallments": true,
       "showSavings": true,
-      "blockClass":"productDetails-price"
+      "blockClass": "productDetails-price"
     }
   },
-  "cash-discount":{
-    "props":{
-      "blockClass":"cash-discount",
-      "percentageNumber":5,
-      "minimumPrice":0,
-      "discountDescription":"no depósito"
+  "cash-discount": {
+    "props": {
+      "blockClass": "cash-discount",
+      "percentageNumber": 5,
+      "minimumPrice": 0,
+      "discountDescription": "no depósito"
     }
   },
-
   "flex-layout.row#buy-button": {
     "props": {
       "marginTop": 4,
       "marginBottom": 7,
-      "blockClass":"row-buyButton"
+      "blockClass": "row-buyButton"
     },
     "children": [
       "buy-button#btn-productDetail"
     ]
   },
-  "buy-button#btn-productDetail":{
-    "props":{
-      "blockClass":"btn-productDetail",
-      "isOneClickBuy":true,
+  "buy-button#btn-productDetail": {
+    "props": {
+      "blockClass": "btn-productDetail",
+      "isOneClickBuy": true,
       "buyButtonText": "COMPRAR"
     }
   },
-  "flex-layout.row#seal-security":{
-    "children":[
-      "rich-text#securitySell" 
+  "flex-layout.row#seal-security": {
+    "children": [
+      "rich-text#securitySell"
     ],
-    "props":{
-      "blockClass":"row-sealSecurity"
+    "props": {
+      "blockClass": "row-sealSecurity"
     }
   },
-  "flex-layout.row#linkRegulation":{
-    "children":[
+  "flex-layout.row#linkRegulation": {
+    "children": [
       "flex-layout.col#linkRegulation",
       "flex-layout.col#linkAirport"
     ],
-    "props":{
-      "blockClass":"row-linkRegulation"
+    "props": {
+      "blockClass": "row-linkRegulation"
     }
-  },    
-  "flex-layout.col#linkRegulation":{
-    "children":[
+  },
+  "flex-layout.col#linkRegulation": {
+    "children": [
       "rich-text#link-regulation"
     ],
-    "props":{
-      "width":"50%",
-      "blockClass":"col-linkProduct"
+    "props": {
+      "width": "50%",
+      "blockClass": "col-linkProduct"
     }
   },
-  "flex-layout.col#linkAirport":{
-    "children":[
+  "flex-layout.col#linkAirport": {
+    "children": [
       "rich-text#link-airport"
     ],
-    "props":{
-      "width":"50%",
-      "blockClass":"col-linkProduct"
-    }    
-  },  
-  "rich-text#link-regulation":{
-    "props":{
-      "text":"[Regulamento para comprar arma de fogo](/regulamento)",
-      "blockClass":"link-regulation"
+    "props": {
+      "width": "50%",
+      "blockClass": "col-linkProduct"
     }
   },
-  "rich-text#link-airport":{
-    "props":{
-      "text":"[Tabela de aeroportos do Brasil](/frete-aeroporto)",
-      "blockClass":"link-regulation"
+  "rich-text#link-regulation": {
+    "props": {
+      "text": "[Regulamento para comprar arma de fogo](/regulamento)",
+      "blockClass": "link-regulation"
     }
-  },  
-  "rich-text#securitySell":{
-    "props":{
-      "text":"Compra **Segura**",
-      "blockClass":"text-securitySell"
+  },
+  "rich-text#link-airport": {
+    "props": {
+      "text": "[Tabela de aeroportos do Brasil](/frete-aeroporto)",
+      "blockClass": "link-regulation"
     }
-  }, 
-  "flex-layout.row#banner-specification":{
-    "children":[
+  },
+  "rich-text#securitySell": {
+    "props": {
+      "text": "Compra **Segura**",
+      "blockClass": "text-securitySell"
+    }
+  },
+  "flex-layout.row#banner-specification": {
+    "children": [
       "image#banner-specification"
     ]
   },
-  "image#banner-specification":{
-    "props":{
+  "image#banner-specification": {
+    "props": {
       "src": "",
       "maxWidth": "100%",
       "link": "https://www.vtex.com.br"
     }
   },
-  "flex-layout.row#product-description":{
-    "children":[
+  "flex-layout.row#product-description": {
+    "children": [
       "tab-layout#description"
     ],
-    "props":{
-      "blockClass":"productDetail-tabDescription"
+    "props": {
+      "blockClass": "productDetail-tabDescription"
     }
   },
-
   "tab-layout#description": {
     "children": [
       "tab-list#listDescription",
@@ -233,24 +234,24 @@
     "children": [
       "tab-list.item#product-description",
       "tab-list.item#product-specification"
-      ],
-      "props":{
-        "blockClass":"container-tabsDescription"
-      }
+    ],
+    "props": {
+      "blockClass": "container-tabsDescription"
+    }
   },
   "tab-list.item#product-description": {
     "props": {
       "tabId": "product-description",
       "label": "Visão geral",
       "defaultActiveTab": true,
-      "blockClass":"btn-description"
+      "blockClass": "btn-description"
     }
   },
   "tab-list.item#product-specification": {
     "props": {
       "tabId": "product-specification",
       "label": "Especificações",
-      "blockClass":"btn-description"
+      "blockClass": "btn-description"
     }
   },
   "tab-content#contentDescription": {
@@ -267,8 +268,8 @@
       "tabId": "product-description"
     }
   },
-  "product-description":{
-    "props":{
+  "product-description": {
+    "props": {
       "collapseContent": false
     }
   },
@@ -280,20 +281,9 @@
       "tabId": "product-specification"
     }
   },
-  "product-specifications":{
-    "props":{
-      "collapsible":"never"
+  "product-specifications": {
+    "props": {
+      "collapsible": "never"
     }
   }
-  
-
-
-
-
-
-
-
-
-
-
 }

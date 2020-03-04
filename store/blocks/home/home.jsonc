@@ -6,10 +6,14 @@
       // "flex-layout.row#banner-featured",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "shelf#home",
-      "shelf#home2",
-      "shelf#home3",
-      "shelf#home4",
+      "rich-text#shelfTitle",
+      "flex-layout.row#shelf",
+      "rich-text#shelfTitle",
+      "flex-layout.row#shelf2",
+      "rich-text#shelfTitle",
+      "flex-layout.row#shelf3",
+      "rich-text#shelfTitle",
+      "flex-layout.row#shelf4",
       // "flex-layout.row#banners-segmented",      
       // "flex-layout.row#shelf-special",
       // "flex-layout.row#bannerMiddle-row",
@@ -21,7 +25,6 @@
       // "newsletter"
     ]
   },
-
   // Caroussel
   "carousel#default": {
     "props": {
@@ -41,120 +44,142 @@
       "showDots": true
     }
   },
-
-
   // Banners featured
-  "flex-layout.row#banner-featured":{
-    "children":[
+  "flex-layout.row#banner-featured": {
+    "children": [
       "flex-layout.col#featured1",
       "flex-layout.col#featured2"
     ],
-    "props":{
-      "blockClass":"banner-featured-content"
+    "props": {
+      "blockClass": "banner-featured-content"
     }
   },
-  "flex-layout.col#featured1":{
-    "children":[
+  "flex-layout.col#featured1": {
+    "children": [
       "image#featured-image-01"
     ],
-    "props":{
-      "blockClass":"banner-featured-01"
+    "props": {
+      "blockClass": "banner-featured-01"
     }
   },
-  "image#featured-image-01":{
-    "props":{
+  "image#featured-image-01": {
+    "props": {
       "src": "https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/featured-01___60178c661ac300e50d27d612326d02bf.jpg",
       "maxHeight": "100%",
       "maxWidth": "100%"
     }
   },
-  "flex-layout.col#featured2":{
-    "children":[
+  "flex-layout.col#featured2": {
+    "children": [
       "image#featured-image-02"
     ],
-    "props":{
-      "blockClass":"banner-featured-02"
-    }    
+    "props": {
+      "blockClass": "banner-featured-02"
+    }
   },
-  "image#featured-image-02":{
-    "props":{
+  "image#featured-image-02": {
+    "props": {
       "src": "https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/featured-02___d9fef2aa7d6e5de9df2bebf35a95dd25.jpg",
       "maxHeight": "100%",
       "maxWidth": "100%"
     }
-  },    
-
-  // Shelf Primary
-  "shelf#home":{
-    "blocks":[
-      "product-summary.shelf#featured"
-    ],
-    "props":{
-      "blockClass":"shelf-featured",
-      "orderBy": "OrderByTopSaleDESC",
-      "productList": {
-        "maxItems": 20,
-        "itemsPerPage": 4,
-        "scroll": "BY_PAGE",
-        "arrows": true,
-        "dots":false,
-        "titleText": "DESTAQUES"     
-      } 
+  },
+  //SHELF ROWS
+  "flex-layout.row#shelf": {
+    "children": [
+      "list-context.product-list#home1"
+    ]
+  },
+  "flex-layout.row#shelf2": {
+    "children": [
+      "list-context.product-list#home2"
+    ]
+  },
+  "flex-layout.row#shelf3": {
+    "children": [
+      "list-context.product-list#home3"
+    ]
+  },
+  "flex-layout.row#shelf4": {
+    "children": [
+      "list-context.product-list#home4"
+    ]
+  },
+  // SHELF TITLE
+  "rich-text#shelfTitle": {
+    "props": {
+      "text": "Seu título aqui",
+      "blockClass": "shelfTitle"
     }
   },
-  "shelf#home2":{
-    "blocks":[
+  // Shelf Primary
+  "list-context.product-list#home1": {
+    "blocks": [
       "product-summary.shelf#featured"
     ],
-    "props":{
-      "blockClass":"shelf-featured",
-      "orderBy": "OrderByTopSaleDESC",
-      "productList": {
-        "maxItems": 20,
-        "itemsPerPage": 4,
-        "scroll": "BY_PAGE",
-        "arrows": true,
-        "dots":false,
-        "titleText": "PISTOLAS"     
-      } 
+    "children": [
+      "slider-layout#demo-products"
+    ],
+    "props": {
+      "blockClass": "shelf-featured",
+      "maxItems": 20,
+      "titleText": "DESTAQUES",
+      "installmentCriteria": "MAX_WITH_INTEREST"
     }
-  },  
-  "shelf#home3":{
-    "blocks":[
+  },
+  "list-context.product-list#home2": {
+    "blocks": [
       "product-summary.shelf#featured"
     ],
-    "props":{
-      "blockClass":"shelf-featured",
-      "orderBy": "OrderByTopSaleDESC",
-      "productList": {
-        "maxItems": 20,
-        "itemsPerPage": 4,
-        "scroll": "BY_PAGE",
-        "arrows": true,
-        "dots":false,
-        "titleText": "ESPINGARDAS"     
-      } 
+    "children": [
+      "slider-layout#demo-products"
+    ],
+    "props": {
+      "blockClass": "shelf-featured",
+      "maxItems": 20,
+      "titleText": "DESTAQUES",
+      "installmentCriteria": "MAX_WITH_INTEREST"
     }
-  }, 
-  "shelf#home4":{
-    "blocks":[
+  },
+  "list-context.product-list#home3": {
+    "blocks": [
       "product-summary.shelf#featured"
     ],
-    "props":{
-      "blockClass":"shelf-featured",
+    "children": [
+      "slider-layout#demo-products"
+    ],
+    "props": {
+      "blockClass": "shelf-featured",
+      "maxItems": 20,
+      "titleText": "DESTAQUES",
+      "installmentCriteria": "MAX_WITH_INTEREST"
+    }
+  },
+  "list-context.product-list#home4": {
+    "blocks": [
+      "product-summary.shelf#featured"
+    ],
+    "children": [
+      "slider-layout#demo-products"
+    ],
+    "props": {
+      "blockClass": "shelf-featured",
       "orderBy": "OrderByTopSaleDESC",
       "productList": {
+        "blockClass": "shelf-featured",
         "maxItems": 20,
-        "itemsPerPage": 4,
-        "scroll": "BY_PAGE",
-        "arrows": true,
-        "dots":false,
-        "titleText": ""     
-      } 
+        "titleText": "DESTAQUES",
+        "installmentCriteria": "MAX_WITH_INTEREST"
+      }
     }
-  },     
-  "product-summary.shelf#featured":{
-    "children":[
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "showNavigationArrows": true
+    }
+  },
+  "product-summary.shelf#featured": {
+    "children": [
       "stack-layout#prodsum",
       "product-summary-name",
       "product-rating-inline",
@@ -165,33 +190,32 @@
       // "rich-text#buyButtonShelf"   
     ]
   },
-  "product-summary-name":{
-    "props":{
-      "blockClass":"shelf-nameProduct-featured"
+  "product-summary-name": {
+    "props": {
+      "blockClass": "shelf-nameProduct-featured"
     }
   },
-  "rich-text#buyButtonShelf":{
-     "props":{
-       "text":"Comprar",
-       "blockClass":"btnBuy"
-     }
-  },  
-  "cash-discount-summary":{
-    "props":{
-      "percentageNumber":5,
-      "minimumPrice":0,
+  "rich-text#buyButtonShelf": {
+    "props": {
+      "text": "Comprar",
+      "blockClass": "btnBuy"
+    }
+  },
+  "cash-discount-summary": {
+    "props": {
+      "percentageNumber": 5,
+      "minimumPrice": 0,
       "discountDescription": "no depósito"
     }
   },
-
   // Shelf 02
-  "flex-layout.row#shelf-special":{
-    "children":[
+  "flex-layout.row#shelf-special": {
+    "children": [
       // "flex-layout.col#shelf-special01",
       "flex-layout.col#shelf-special02"
     ],
-    "props":{
-      "blockClass":"content-bannerSpecial"
+    "props": {
+      "blockClass": "content-bannerSpecial"
     }
   },
   // "flex-layout.col#shelf-special01":{
@@ -210,35 +234,33 @@
   //     "blockClass":"img-bannerSpecial"
   //   }    
   // },
-  "flex-layout.col#shelf-special02":{
-    "children":[
+  "flex-layout.col#shelf-special02": {
+    "children": [
       "shelf#special"
     ]
   },
   "shelf#special": {
-    "blocks":[
+    "blocks": [
       "product-summary.shelf#special"
     ],
     "props": {
-      "blockClass":"shelf-special",
+      "blockClass": "shelf-special",
       "orderBy": "OrderByTopSaleDESC",
       "paginationDotsVisibility": "desktopOnly",
       "showListPrice": true,
       "showLabels": true,
-      "showInstallments": true,
-      "showSavings": true,          
+      "showSavings": true,
       "productList": {
         "maxItems": 4,
         "itemsPerPage": 4,
         "minItemsPerPage": 4,
         "scroll": "BY_PAGE",
         "arrows": true,
-        "dots":false,
+        "dots": false,
         "titleText": ""
       }
     }
   },
-
   "product-summary.shelf#special": {
     "children": [
       "product-summary-image#special",
@@ -247,43 +269,43 @@
       // "product-summary-buy-button#special"
       "rich-text#buyButtonShelf"
     ],
-    "props":{
-      "blockClass":"shelf-special-li"
-    }
-  },  
-  "product-summary-image#special":{
-    "props":{
-      "blockClass":"image-special"
+    "props": {
+      "blockClass": "shelf-special-li"
     }
   },
-  "product-summary-name#special":{
-    "props":{
-      "blockClass":"name-special"
+  "product-summary-image#special": {
+    "props": {
+      "blockClass": "image-special"
     }
-  },  
-  "product-summary-price#special":{
-    "props":{
-      "blockClass":"price-special",
-      "showInstallments": true
+  },
+  "product-summary-name#special": {
+    "props": {
+      "blockClass": "name-special"
     }
-  }, 
-  "product-summary-buy-button#special":{
-    "props":{
-      "blockClass":"buyButton-special"
+  },
+  "product-summary-price#special": {
+    "props": {
+      "blockClass": "price-special",
+      "showInstallments": true,
+      "showDiscountValue": true
     }
-  },     
-
+  },
+  "product-summary-buy-button#special": {
+    "props": {
+      "blockClass": "buyButton-special"
+    }
+  },
   // Banner Middle
-  "flex-layout.row#bannerMiddle-row":{
-    "children":[
+  "flex-layout.row#bannerMiddle-row": {
+    "children": [
       "info-card#infoShipping"
     ],
-    "props":{
-      "blockClass":"content-infoCard-middle"
+    "props": {
+      "blockClass": "content-infoCard-middle"
     }
   },
-  "info-card#infoShipping":{
-    "props":{
+  "info-card#infoShipping": {
+    "props": {
       "id": "info-card-shipping",
       "isFullModeStyle": true,
       "textPosition": "left",
@@ -292,31 +314,31 @@
       "callToActionText": "Como comprar seu armamento",
       "callToActionUrl": "/como-comprar",
       "blockClass": "info-card-shipping",
-      "textAlignment": "center"      
+      "textAlignment": "center"
     }
   },
-  "flex-layout.row#featured1-grid":{
-    "children":[
+  "flex-layout.row#featured1-grid": {
+    "children": [
       "info-card#featured01"
     ]
   },
-  "flex-layout.row#featured2-grid":{
-    "children":[
+  "flex-layout.row#featured2-grid": {
+    "children": [
       "info-card#featured02"
     ]
-  },  
-  "flex-layout.row#featured3-grid":{
-    "children":[
+  },
+  "flex-layout.row#featured3-grid": {
+    "children": [
       "info-card#featured03"
     ]
-  },    
-  "flex-layout.row#featured4-grid":{
-    "children":[
+  },
+  "flex-layout.row#featured4-grid": {
+    "children": [
       "info-card#featured04"
     ]
-  },    
-  "info-card#featured01":{
-    "props":{
+  },
+  "info-card#featured01": {
+    "props": {
       "id": "info-card-featured1",
       "isFullModeStyle": false,
       "textPosition": "left",
@@ -326,11 +348,11 @@
       "callToActionText": "ver armas",
       "callToActionUrl": "/armas-de-fogo",
       "blockClass": "info-card-featured",
-      "textAlignment": "right"       
+      "textAlignment": "right"
     }
   },
-  "info-card#featured02":{
-    "props":{
+  "info-card#featured02": {
+    "props": {
       "id": "info-card-featured4",
       "isFullModeStyle": false,
       "textPosition": "right",
@@ -340,11 +362,11 @@
       "callToActionText": "ver kits",
       "callToActionUrl": "/armas-de-fogo",
       "blockClass": "info-card-featured",
-      "textAlignment": "left"     
+      "textAlignment": "left"
     }
-  },  
-  "info-card#featured03":{
-    "props":{
+  },
+  "info-card#featured03": {
+    "props": {
       "id": "info-card-featured3",
       "isFullModeStyle": false,
       "textPosition": "left",
@@ -354,11 +376,11 @@
       "callToActionText": "ver caixas",
       "callToActionUrl": "/armas-de-fogo",
       "blockClass": "info-card-featured",
-      "textAlignment": "right"       
+      "textAlignment": "right"
     }
-  }, 
-  "info-card#featured04":{
-    "props":{
+  },
+  "info-card#featured04": {
+    "props": {
       "id": "info-card-featured4",
       "isFullModeStyle": false,
       "textPosition": "right",
@@ -368,12 +390,9 @@
       "callToActionText": "ver espingardas",
       "callToActionUrl": "/armas-de-fogo",
       "blockClass": "info-card-featured",
-      "textAlignment": "left"        
+      "textAlignment": "left"
     }
-  },   
-
-  
-  
+  },
   // Shelf tabs
   "tab-layout#shelf-tabs": {
     "children": [
@@ -388,21 +407,21 @@
     "children": [
       "tab-list.item#shelfTable-01",
       "tab-list.item#shelfTable-02"
-      ]
+    ]
   },
   "tab-list.item#shelfTable-01": {
     "props": {
       "tabId": "shelfTable-01",
       "label": "Coldres",
       "defaultActiveTab": true,
-      "blockClass":"shelfTable-button"
+      "blockClass": "shelfTable-button"
     }
   },
   "tab-list.item#shelfTable-02": {
     "props": {
       "tabId": "shelfTable-02",
       "label": "Acessórios",
-      "blockClass":"shelfTable-button"
+      "blockClass": "shelfTable-button"
     }
   },
   "tab-content#shelfTable": {
@@ -426,20 +445,19 @@
     "props": {
       "tabId": "shelfTable-02"
     }
-  },  
+  },
   "shelf#shelfTables-01": {
-    "blocks":[
+    "blocks": [
       "product-summary.shelf#table"
     ],
     "props": {
-      "blockClass":"shelf-table",
+      "blockClass": "shelf-table",
       "orderBy": "OrderByTopSaleDESC",
       "paginationDotsVisibility": "hidden",
       "showListPrice": true,
       "showLabels": true,
-      "showInstallments": true,
-      "showSavings": true,          
-      "showTitle":"false",
+      "showSavings": true,
+      "showTitle": "false",
       "productList": {
         "maxItems": 16,
         "itemsPerPage": 4,
@@ -451,18 +469,17 @@
     }
   },
   "shelf#shelfTables-02": {
-    "blocks":[
+    "blocks": [
       "product-summary.shelf#table"
     ],
     "props": {
-      "blockClass":"shelf-table",
+      "blockClass": "shelf-table",
       "orderBy": "OrderByTopSaleDESC",
       "paginationDotsVisibility": "hidden",
       "showListPrice": true,
       "showLabels": true,
-      "showInstallments": true,
-      "showSavings": true,          
-      "showTitle":"false",
+      "showSavings": true,
+      "showTitle": "false",
       "productList": {
         "maxItems": 16,
         "itemsPerPage": 4,
@@ -481,93 +498,91 @@
       // "product-summary-buy-button"
       "rich-text#buyButtonShelf"
     ]
-  }, 
-  "product-summary-price":{
-    "props":{
-      "showInstallments": true
+  },
+  "product-summary-price": {
+    "props": {
+      "showInstallments": true,
+      "showDiscountValue": true
     }
   },
-
   // Banners segmentados
-
-  "flex-layout.row#banners-segmented":{
-    "children":[
+  "flex-layout.row#banners-segmented": {
+    "children": [
       "flex-layout.col#banners-segmented-01",
       "flex-layout.col#banners-segmented-02",
       "flex-layout.col#banners-segmented-03",
       "flex-layout.col#banners-segmented-04"
     ],
-    "props":{
-      "blockClass":"content-bannersSegmented"
+    "props": {
+      "blockClass": "content-bannersSegmented"
     }
   },
-  "flex-layout.col#banners-segmented-01":{
-    "children":[
+  "flex-layout.col#banners-segmented-01": {
+    "children": [
       "image#segmented01"
     ],
-    "props":{
-      "blockClass":"banner-segment-content"
+    "props": {
+      "blockClass": "banner-segment-content"
     }
   },
-  "image#segmented01":{
-    "props":{
-      "src":"https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/segmented001___cbb554ac56daa350165451842e9f71fc.jpg",
-      "link":"/",
-      "blockClass":"banner-segment-img"
+  "image#segmented01": {
+    "props": {
+      "src": "https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/segmented001___cbb554ac56daa350165451842e9f71fc.jpg",
+      "link": "/",
+      "blockClass": "banner-segment-img"
     }
   },
-  "flex-layout.col#banners-segmented-02":{
-    "children":[
+  "flex-layout.col#banners-segmented-02": {
+    "children": [
       "image#segmented02"
     ],
-    "props":{
-      "blockClass":"banner-segment-content"
+    "props": {
+      "blockClass": "banner-segment-content"
     }
   },
-  "image#segmented02":{
-    "props":{
-      "src":"https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/segmented002___fc7b2b213ab6fc1447d99b112625fc4f.jpg",
-      "link":"/",
-      "blockClass":"banner-segment-img"
+  "image#segmented02": {
+    "props": {
+      "src": "https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/segmented002___fc7b2b213ab6fc1447d99b112625fc4f.jpg",
+      "link": "/",
+      "blockClass": "banner-segment-img"
     }
-  },  
-  "flex-layout.col#banners-segmented-03":{
-    "children":[
+  },
+  "flex-layout.col#banners-segmented-03": {
+    "children": [
       "image#segmented03"
     ],
-    "props":{
-      "blockClass":"banner-segment-content"
+    "props": {
+      "blockClass": "banner-segment-content"
     }
   },
-  "image#segmented03":{
-    "props":{
-      "src":"https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/segmented003___6893d0456e66fa9c6245c14def1fc6dc.jpg",
-      "link":"/",
-      "blockClass":"banner-segment-img"
+  "image#segmented03": {
+    "props": {
+      "src": "https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/segmented003___6893d0456e66fa9c6245c14def1fc6dc.jpg",
+      "link": "/",
+      "blockClass": "banner-segment-img"
     }
-  },  
-  "flex-layout.col#banners-segmented-04":{
-    "children":[
+  },
+  "flex-layout.col#banners-segmented-04": {
+    "children": [
       "image#segmented04"
     ],
-    "props":{
-      "blockClass":"banner-segment-content"
+    "props": {
+      "blockClass": "banner-segment-content"
     }
   },
-  "image#segmented04":{
-    "props":{
-      "src":"https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/segmented003___6893d0456e66fa9c6245c14def1fc6dc.jpg",
-      "link":"/",
-      "blockClass":"banner-segment-img"
+  "image#segmented04": {
+    "props": {
+      "src": "https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/segmented003___6893d0456e66fa9c6245c14def1fc6dc.jpg",
+      "link": "/",
+      "blockClass": "banner-segment-img"
     }
-  },     
-
+  },
   // Newsletter
-  "newsletter":{
-    "props":{
-      "label":"Cadastre-se em nossa newsletter e receba notícias sobre a Brasil Tática e o mercado de armas",
-      "submit":"Cadastrar",
-      "blockClass":"content-newsletter"
+  "newsletter": {
+    "props": {
+      "label": "Cadastre-se em nossa newsletter e receba notícias sobre a Brasil Tática e o mercado de armas",
+      "submit": "Cadastrar",
+      "blockClass": "content-newsletter"
     }
   }
 }
