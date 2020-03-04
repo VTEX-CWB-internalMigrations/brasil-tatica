@@ -8,11 +8,11 @@
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "rich-text#shelfTitle",
       "flex-layout.row#shelf",
-      "rich-text#shelfTitle",
+      "rich-text#shelfTitle2",
       "flex-layout.row#shelf2",
-      "rich-text#shelfTitle",
+      "rich-text#shelfTitle3",
       "flex-layout.row#shelf3",
-      "rich-text#shelfTitle",
+      "rich-text#shelfTitle4",
       "flex-layout.row#shelf4",
       // "flex-layout.row#banners-segmented",      
       // "flex-layout.row#shelf-special",
@@ -107,6 +107,24 @@
   },
   // SHELF TITLE
   "rich-text#shelfTitle": {
+    "props": {
+      "text": "Seu título aqui",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#shelfTitle2": {
+    "props": {
+      "text": "Seu título aqui",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#shelfTitle3": {
+    "props": {
+      "text": "Seu título aqui",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#shelfTitle4": {
     "props": {
       "text": "Seu título aqui",
       "blockClass": "shelfTitle"
