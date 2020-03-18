@@ -186,13 +186,13 @@
   "rich-text#link-regulation": {
     "props": {
       "text": "[Regulamento para comprar arma de fogo](/regulamento)",
-      "blockClass": "link-regulation"
+      "blockClass": "link-regulationGun"
     }
   },
   "rich-text#link-airport": {
     "props": {
       "text": "[Tabela de aeroportos do Brasil](/frete-aeroporto)",
-      "blockClass": "link-regulation"
+      "blockClass": "link-regulationPlane"
     }
   },
   "rich-text#securitySell": {

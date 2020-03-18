@@ -260,6 +260,45 @@
   }  
 }
 
+.container--link-regulationGun , .container--link-regulationPlane{
+  display: flex;
+  padding: 0px 0px 30px;
+  align-items: center;
+  align-content: center;
+}
+
+.link--link-regulationGun , .link--link-regulationPlane{
+  color: #171717;
+  font-size: .9em;
+  display: inline-block;
+  text-transform: lowercase;
+  max-width: 160px;
+}
+
+.paragraph--link-regulationGun , .paragraph--link-regulationPlane{
+  margin: 0px;
+}
+
+.paragraph--link-regulationGun:before{
+  content: "";
+  background: url(https://brasiltatica.vteximg.com.br/arquivos/brtaticaGun.png);
+  width: 40px;
+  height: 35px;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.paragraph--link-regulationPlane:before{
+  content: "";
+  background: url(https://brasiltatica.vteximg.com.br/arquivos/brtaticaPlane.png);
+  width: 40px;
+  height: 35px;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
 @media only screen and (min-width: 80em){
   .container--contact-header .paragraph{
     font-size: .9em;
