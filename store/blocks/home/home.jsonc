@@ -222,7 +222,7 @@
   "cash-discount-summary": {
     "props": {
       "percentageNumber": 5,
-      "minimumPrice": 0,
+      "minimumPrice": 1500,
       "discountDescription": "no depósito"
     }
   },
