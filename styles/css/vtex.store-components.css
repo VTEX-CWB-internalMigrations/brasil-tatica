@@ -89,7 +89,7 @@
 .skuSelectorNameContainer{margin:1.5em 0 0;}
 /* Specification */
 
-.specificationsTableContainer{padding:0;margin-top:1em;}
+.specificationsTableContainer{padding:0;margin: 0px 2em;}
 .specificationsTitle,
 .specificationsTablePropertyHeading, 
 .specificationsTableSpecificationHeading{display:none;}
@@ -173,6 +173,23 @@
 
 .imageElement--img-register{
   border-radius: 100%;
+}
+
+.productDescriptionText{
+  font-size: 0.90rem;
+  border-right: 1px solid #bdbdbd;
+  color: #28538a;
+  font-weight: 500;
+  text-align: left;
+  border-bottom: 0;
+  background: #f4f4f4;
+  padding: 40px;
+  margin: 0px 2rem;
+  border: none;
+}
+
+.specificationItemProperty{
+  display: none
 }
 
  @media only screen and (min-width: 40em){

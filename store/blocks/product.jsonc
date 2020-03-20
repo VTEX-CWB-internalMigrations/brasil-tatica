@@ -215,10 +215,20 @@
   },
   "flex-layout.row#product-description": {
     "children": [
-      "tab-layout#description"
+      "flex-layout.col#descriptions"
+      //"tab-layout#description"
     ],
     "props": {
       "blockClass": "productDetail-tabDescription"
+    }
+  },
+  "flex-layout.col#descriptions":{
+    "children":[
+      "product-description",
+      "product-specifications"
+
+    ],
+    "props":{
     }
   },
   "tab-layout#description": {
