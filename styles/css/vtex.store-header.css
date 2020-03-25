@@ -19,3 +19,8 @@
 .headerRowBackground--category-menu-background {
     background-color: #0e2542;
 }
+
+.headerRowContentContainer--header-lineOne{
+    background: #0e2542;
+    padding: 0px 35px;
+}

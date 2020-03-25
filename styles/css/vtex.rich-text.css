@@ -2,11 +2,11 @@
   line-height:1;
   font-size: .8em;
 }
-.container--contact-header .paragraph{color:#FF6600;}
+.container--contact-header .paragraph{color:#ffffff;}
 .link--contact-header,
-.link--content-intitutional{color:#FF6600 !important;}
+.link--content-intitutional{color:#ffffff !important;}
 .container--contact-header .link, .container--contact-header .link--text-securitySell{
-  color:#ff6600;
+  color:#ffffff;
   text-decoration: none;
 }
 

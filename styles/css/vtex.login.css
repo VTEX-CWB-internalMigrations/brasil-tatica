@@ -1,3 +1,12 @@
+@media only screen and (min-width: 1025px){
+    .label{
+        color: #fff;
+    }
+    .profileIcon--login-desktop{
+        color: #fff;
+    }
+}
+
 @media only screen and (min-width: 1280em){
     /*
     .label:after{
@@ -19,4 +28,6 @@
     .arrowUp{
         left: 25px; 
     }
+
+
 }
