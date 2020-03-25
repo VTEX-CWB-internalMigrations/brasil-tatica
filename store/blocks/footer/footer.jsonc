@@ -187,7 +187,7 @@
   "rich-text#footer-mobile": {
     "props": {
       "text": "Copyright ® - Todos os direitos reservados.<br/>Brasil Tática - CNPJ:28.039.153/0001-61 Rua 24 de Maio, 1575 Loja - Rebouças - Curitiba - Paraná e CEP 80.220-060.",
-      "blockClass": "footer"
+      "blockClass":"text-copyright"
     }
   }  
   

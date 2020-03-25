@@ -61,7 +61,7 @@
 .container--footer-title .paragraph{margin:0 0 .5em;}
 .container--footer-textDefault .paragraph{color:#fff;font-size: 1em;font-weight: bold;margin:0 0 .5em;}
 .container--text-copyright{margin: 1em 0;}
-.container--text-copyright .paragraph{width:100em;text-align:center;font-size:.8em;}
+.container--text-copyright .paragraph{text-align:center;font-size:.8em;}
 .container--alert-product{
   background: #fff;
   border:1px solid #048a7d;
