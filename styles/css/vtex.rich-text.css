@@ -154,6 +154,14 @@
   font-weight: bold;  
 }
 
+.paragraph--text-copyright{
+  border-top: 0.5px solid #f1f1f1;
+  padding-top: 15px;
+}
+
+.link--text-copyright{
+  color: #fff;
+}
 
 .container--title-video-howTo{
   text-align: center;
