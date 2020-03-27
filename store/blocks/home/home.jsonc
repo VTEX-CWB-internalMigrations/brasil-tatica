@@ -223,7 +223,8 @@
     "props": {
       "percentageNumber": 5,
       "minimumPrice": 1500,
-      "discountDescription": "no depósito"
+      "discountDescription": "no depósito",
+      "blockClass": "discountSummary"
     }
   },
   // Shelf 02

@@ -14,6 +14,20 @@
 .containerNormal{background:#fff;}
 .priceContainer{padding-bottom:0;}
 
+.priceContainer{
+    text-align: left;
+    padding-left: 35px;
+}
+
+.sellingPrice{
+    padding: 0px;
+}
+
+.productPriceClass{
+    width: 100%;
+}
+
+
 @media only screen and (min-width: 40em){
     .brandName--shelf-nameProduct-featured{
         display: block;

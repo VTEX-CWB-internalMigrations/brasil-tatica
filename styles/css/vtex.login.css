@@ -7,7 +7,7 @@
     }
 }
 
-@media only screen and (min-width: 1280em){
+@media only screen and (min-width: 1000px){
     /*
     .label:after{
         content:"▾";
@@ -28,6 +28,4 @@
     .arrowUp{
         left: 25px; 
     }
-
-
 }
