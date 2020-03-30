@@ -16,7 +16,9 @@
   color: #ffffff;
 }
 .itemContainer a, .itemContainer span{color:#fff;}
-
+.firstLevelLink{
+  border-top: 2px solid #fff
+}
 @media only screen and (min-width: 40em){
     .container{padding-left:11em;}
     /* Hover */
@@ -27,6 +29,9 @@
       height:auto;
       padding:.5em 0;
     }
+    .itemContainer:first-child .itemContainer{
+      min-height: 500px;
+    }
     /*
     .itemContainer:first-child .itemContainer ul{justify-content: left;overflow: hidden;}
     .itemContainer:first-child span{background: url(https://brasiltatica.vteximg.com.br/assets/vtex.file-manager-graphql/images/icon-menu___d8dde54….png) no-repeat center left scroll transparent;color: transparent;width: 20px;}
@@ -35,6 +40,6 @@
 }
 @media only screen and (min-width: 80em){
       .container{padding-left: 1em;}
-      .itemContainer:first-child ul li{width:190px;}
+      .itemContainer:first-child ul li{width:200px;}
 }
     
