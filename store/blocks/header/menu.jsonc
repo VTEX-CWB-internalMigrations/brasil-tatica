@@ -4,9 +4,6 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#armas-de-fogo",
-      "menu-item#coldres-de-armas",
-      "menu-item#armas-de-pressao"
     ]
   },
 // menu 01
