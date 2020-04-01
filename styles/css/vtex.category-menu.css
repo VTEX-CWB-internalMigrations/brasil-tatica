@@ -19,6 +19,11 @@
 .firstLevelLink{
   border-top: 2px solid #fff
 }
+
+.secondLevelLink{
+  max-width: 190px;
+}
+
 @media only screen and (min-width: 40em){
     .container{padding-left:11em;}
     /* Hover */
@@ -40,6 +45,6 @@
 }
 @media only screen and (min-width: 80em){
       .container{padding-left: 1em;}
-      .itemContainer:first-child ul li{width:200px;}
+      .itemContainer:first-child ul li{width:203px;}
 }
     

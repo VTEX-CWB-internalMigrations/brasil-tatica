@@ -42,6 +42,12 @@
     padding:1.5em 0;
     margin:1em 0;
 }
+.flexRowContent--confirmationButtons :global(.vtex-button){
+    color: #fff;
+    background: #ef852d;
+    border: 0px;
+    border-radius: 0px;
+}
 
 @media only screen and (min-width: 40em){
     .flexRow--banner-featured-content{display:block;}

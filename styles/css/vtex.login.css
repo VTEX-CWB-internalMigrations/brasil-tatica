@@ -1,3 +1,6 @@
+.buttonLink :global(.vtex-button){
+    max-width: 30px;
+}
 @media only screen and (min-width: 1025px){
     .label{
         color: #fff;

@@ -45,10 +45,11 @@
     "vtex.product-specification-badges": "0.x",
     "vtex.product-review-interfaces": "1.x",
     "vtex.telemarketing": "2.x",
-    "vtex.order-placed": "1.x",
+    "vtex.order-placed": "2.x",
     "vtex.cash-discount": "0.x",
     "vtex.list-context": "0.x",
-    "vtex.slider-layout": "0.x"
+    "vtex.slider-layout": "0.x",
+    "vtex.responsive-layout": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
