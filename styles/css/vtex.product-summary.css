@@ -28,6 +28,7 @@
 }
 
 
+
 @media only screen and (min-width: 40em){
     .brandName--shelf-nameProduct-featured{
         display: block;
@@ -35,6 +36,11 @@
         max-height: auto;
         height: auto;
     }    
+    .imageContainer{
+        min-height: 290px;
+        display: flex;
+        align-items: center;
+    }
 }
 
 @media only screen and (min-width: 80em){
