@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "brasil-tatica",
-  "version": "0.0.82",
+  "version": "0.0.83",
   "builders": {
     "styles": "1.x",
     "store": "0.x",
