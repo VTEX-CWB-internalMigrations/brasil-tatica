@@ -159,7 +159,7 @@
       "installmentCriteria": "MAX_WITH_INTEREST"
     }
   },
-  "list-context.product-list#home-3": {
+  "list-context.product-list#home-3-true": {
     "blocks": [
       "product-summary.shelf#featured"
     ],
