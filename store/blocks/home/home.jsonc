@@ -167,7 +167,7 @@
       "slider-layout#demo-products"
     ],
     "props": {
-      "collection": "139",
+      "collection": "145",
       "blockClass": "shelf-featured",
       "titleText": "DESTAQUES",
       "installmentCriteria": "MAX_WITH_INTEREST"
