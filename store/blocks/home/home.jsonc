@@ -102,7 +102,7 @@
   },
   "flex-layout.row#shelf4": {
     "children": [
-      "list-context.product-list#home-4"
+      "list-context.product-list#home-4-true"
     ]
   },
   // SHELF TITLE
@@ -173,7 +173,7 @@
       "installmentCriteria": "MAX_WITH_INTEREST"
     }
   },
-  "list-context.product-list#home-4": {
+  "list-context.product-list#home-4-true": {
     "blocks": [
       "product-summary.shelf#featured"
     ],
