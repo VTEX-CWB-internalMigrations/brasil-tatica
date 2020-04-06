@@ -97,7 +97,7 @@
   },
   "flex-layout.row#shelf3": {
     "children": [
-      "list-context.product-list#home-3"
+      "list-context.product-list#home-3-true"
     ]
   },
   "flex-layout.row#shelf4": {
