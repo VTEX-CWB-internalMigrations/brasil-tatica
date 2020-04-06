@@ -227,7 +227,7 @@
     "props": {
       "percentageNumber": 5,
       "minimumPrice": 1500,
-      "discountDescription": "no depósito",
+      "discountDescription": "depósito",
       "blockClass": "discountSummary"
     }
   },

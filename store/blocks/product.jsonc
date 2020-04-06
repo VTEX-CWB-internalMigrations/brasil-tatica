@@ -128,7 +128,7 @@
       "blockClass": "cash-discount",
       "percentageNumber": 5,
       "minimumPrice": 1500,
-      "discountDescription": "no depósito"
+      "discountDescription": "depósito"
     }
   },
   "flex-layout.row#buy-button": {
