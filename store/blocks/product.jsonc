@@ -126,7 +126,7 @@
   "cash-discount": {
     "props": {
       "blockClass": "cash-discount",
-      "percentageNumber": 5,
+      "percentageNumber": 4,
       "minimumPrice": 1500,
       "discountDescription": "depósito"
     }
