@@ -226,7 +226,7 @@
       "product-summary-name",
       "product-summary-space",
       "product-summary-price",
-      "cash-discount-summary",
+      "cash-discount-summary#fourPercent",
       "product-summary-buy-button"
       // "product-summary-buy-button"
       //"rich-text#buyButtonShelf"

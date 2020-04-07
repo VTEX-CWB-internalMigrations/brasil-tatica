@@ -206,7 +206,7 @@
       "product-summary-name",
       "product-rating-inline",
       "product-summary-price",
-      "cash-discount-summary",
+      "cash-discount-summary#fourPercent",
       "product-identifier.summary",
       "product-summary-buy-button"
       // "rich-text#buyButtonShelf"   
@@ -223,7 +223,7 @@
       "blockClass": "btnBuy"
     }
   },
-  "cash-discount-summary": {
+  "cash-discount-summary#fourPercent": {
     "props": {
       "percentageNumber": 4,
       "minimumPrice": 1500,
