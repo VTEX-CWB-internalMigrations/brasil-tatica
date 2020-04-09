@@ -3,7 +3,8 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context":{
-        "maxItemsPerPage":20
+        "maxItemsPerPage":20,
+        "installmentCriteria": "MAX_WITH_INTEREST"
       }
     }
   },
@@ -14,7 +15,8 @@
       "context": {
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": true,
-        "maxItemsPerPage": 20
+        "maxItemsPerPage": 20,
+        "installmentCriteria": "MAX_WITH_INTEREST"
       }
     }
   },
@@ -23,7 +25,8 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context":{
-        "maxItemsPerPage":20
+        "maxItemsPerPage":20,
+        "installmentCriteria": "MAX_WITH_INTEREST"
       }
     }
   },
@@ -32,7 +35,8 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context":{
-        "maxItemsPerPage":20
+        "maxItemsPerPage":20,
+        "installmentCriteria": "MAX_WITH_INTEREST"
       }
     }
   },
@@ -41,7 +45,8 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context":{
-        "maxItemsPerPage":20
+        "maxItemsPerPage":20,
+        "installmentCriteria": "MAX_WITH_INTEREST"
       }
     }
   },
@@ -51,7 +56,10 @@
       "search-result-layout.desktop",
       "search-result-layout.mobile",
       "search-not-found-layout"
-    ]
+    ],
+    "props":{
+      "installmentCriteria": "MAX_WITH_INTEREST"
+    }
   },
 
   "search-result-layout.desktop": {
@@ -62,6 +70,7 @@
     ],
     "props": {
       "pagination": "show-more",
+      "installmentCriteria": "MAX_WITH_INTEREST",
       "mobileLayout": {
         "mode1": "small",
         "mode2": "normal"
